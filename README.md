@@ -1,6 +1,6 @@
 # ion-type-analysis
 
-This repository contains the methods and code used to analyze ion types in `TODO insert blog post and later preprint/ref`.
+This repository contains the methods and code used to analyze ion types in <https://metabolomics.blog/2024/10/isf/>.
 
 An overview of the process is illustrated below.
 
