@@ -1,0 +1,15 @@
+di_ot_2.5_neg/*.csv
+di_ot_2.5_pos/*.csv
+di_tof_0_20ev_pos/*.csv
+di_tof_0_40ev_pos/*.csv
+di_tof_0_60ev_pos/*.csv
+di_tof_10_20ev_pos/*.csv
+di_tof_10_40ev_pos/*.csv
+di_tof_10_60ev_pos/*.csv
+di_tof_100_20ev_pos/*.csv
+di_tof_100_40ev_pos/*.csv
+di_tof_100_60ev_pos/*.csv
+example/di_tof_10_20ev_pos/*.csv
+lc_at_5_pos/*.csv
+source/**/*.mzML
+source/**/*.tsv

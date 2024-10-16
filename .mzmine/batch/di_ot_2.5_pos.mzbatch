@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8"?><batch mzmine_version="4.3.11">
+    <batchstep method="io.github.mzmine.modules.io.import_rawdata_all.AllSpectralDataImportModule" parameter_version="1">
+        <parameter name="File names">
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_P7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_P6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_P5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_P4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_P3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P19_id_MSn_positive_20231124133935.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_O10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_N10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_O3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_M10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_P19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_L10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_M3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_K10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_L3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_J10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_K3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_I10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_J3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_H10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_I3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_G10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_H3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_F10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_G3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_E10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_F3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_D10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_E3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_C10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_D3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_B10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_C3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5001_A10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_B3_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A22_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A20_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A21_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A19_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A18_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A17_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A16_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A15_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A14_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A13_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A12_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A11_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A10_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A9_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A8_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A6_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_N7_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A5_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A4_id_MSn_positive.mzML</file>
+            <file>/Users/adrutz/Git/ion-type-analysis/data/source/20231123_mzml_mce_scaffold_positive/20231123_pluskal_nencka_mce_5000_A3_id_MSn_positive.mzML</file>
+        </parameter>
+        <parameter name="Advanced import" selected="false">
+            <parameter name="Scan filters" selected="false">
+                <parameter name="Scan number"/>
+                <parameter name="Base Filtering Integer"/>
+                <parameter name="Retention time"/>
+                <parameter name="Mobility"/>
+                <parameter name="MS level filter" selected="All MS levels">1</parameter>
+                <parameter name="Scan definition"/>
+                <parameter name="Polarity">Any</parameter>
+                <parameter name="Spectrum type">ANY</parameter>
+            </parameter>
+            <parameter name="Crop MS1 m/z" selected="false"/>
+            <parameter name="MS1 detector (Advanced)" selected="false" selected_item="Factor of lowest signal">
+                <module name="Factor of lowest signal">
+                    <parameter name="Noise level"/>
+                </module>
+                <module name="Auto">
+                    <parameter name="Noise level"/>
+                </module>
+                <module name="Centroid">
+                    <parameter name="Noise level"/>
+                </module>
+                <module name="Exact mass">
+                    <parameter name="Noise level"/>
+                </module>
+                <module name="Local maxima">
+                    <parameter name="Noise level"/>
+                </module>
+                <module name="Recursive threshold">
+                    <parameter name="Noise level"/>
+                    <parameter name="Min m/z peak width"/>
+                    <parameter name="Max m/z peak width"/>
+                </module>
+                <module name="Wavelet transform">
+                    <parameter name="Noise level"/>
+                    <parameter name="Scale level"/>
+                    <parameter name="Wavelet window size (%)"/>
+                </module>
+            </parameter>
+            <parameter name="MS2 detector (Advanced)" selected="false" selected_item="Factor of lowest signal">
+                <module name="Factor of lowest signal">
+                    <parameter name="Noise level"/>
+                </module>
+                <module name="Auto">
+                    <parameter name="Noise level"/>
+                </module>
+                <module name="Centroid">
+                    <parameter name="Noise level"/>
+                </module>
+                <module name="Exact mass">
+                    <parameter name="Noise level"/>
+                </module>
+                <module name="Local maxima">
+                    <parameter name="Noise level"/>
+                </module>
+                <module name="Recursive threshold">
+                    <parameter name="Noise level"/>
+                    <parameter name="Min m/z peak width"/>
+                    <parameter name="Max m/z peak width"/>
+                </module>
+                <module name="Wavelet transform">
+                    <parameter name="Noise level"/>
+                    <parameter name="Scale level"/>
+                    <parameter name="Wavelet window size (%)"/>
+                </module>
+            </parameter>
+            <parameter name="Denormalize fragment scans (traps)">false</parameter>
+        </parameter>
+        <parameter name="Metadata file" selected="false"/>
+        <parameter name="Spectral library files"/>
+    </batchstep>
+    <batchstep method="io.github.mzmine.modules.dataprocessing.featdet_massdetection.MassDetectionModule" parameter_version="1">
+        <parameter name="Raw data files" type="BATCH_LAST_FILES"/>
+        <parameter name="Scan filters" selected="true">
+            <parameter name="Scan number"/>
+            <parameter name="Base Filtering Integer"/>
+            <parameter name="Retention time"/>
+            <parameter name="Mobility"/>
+            <parameter name="MS level filter" selected="All MS levels">1</parameter>
+            <parameter name="Scan definition"/>
+            <parameter name="Polarity">Any</parameter>
+            <parameter name="Spectrum type">ANY</parameter>
+        </parameter>
+        <parameter name="Scan types (IMS)">All scan types</parameter>
+        <parameter name="Denormalize fragment scans (traps)">false</parameter>
+        <parameter name="Mass detector" selected_item="Factor of lowest signal">
+            <module name="Factor of lowest signal">
+                <parameter name="Noise factor">2.5</parameter>
+            </module>
+            <module name="Auto">
+                <parameter name="Noise level"/>
+            </module>
+            <module name="Centroid">
+                <parameter name="Noise level"/>
+            </module>
+            <module name="Exact mass">
+                <parameter name="Noise level"/>
+            </module>
+            <module name="Local maxima">
+                <parameter name="Noise level"/>
+            </module>
+            <module name="Recursive threshold">
+                <parameter name="Noise level"/>
+                <parameter name="Min m/z peak width"/>
+                <parameter name="Max m/z peak width"/>
+            </module>
+            <module name="Wavelet transform">
+                    <parameter name="Noise level"/>
+                    <parameter name="Scale level"/>
+                    <parameter name="Wavelet window size (%)"/>
+            </module>
+        </parameter>
+    </batchstep>
+    <batchstep method="io.github.mzmine.modules.dataprocessing.featdet_msn_tree.MsnTreeFeatureDetectionModule" parameter_version="1">
+        <parameter name="Raw data files" type="BATCH_LAST_FILES"/>
+        <parameter name="EIC scans" selected="true">
+            <parameter name="Scan number"/>
+            <parameter name="Base Filtering Integer"/>
+            <parameter name="Retention time"/>
+            <parameter name="Mobility"/>
+            <parameter name="MS level filter" selected="MS1, level = 1">1</parameter>
+            <parameter name="Scan definition"/>
+            <parameter name="Polarity">Any</parameter>
+            <parameter name="Spectrum type">ANY</parameter>
+        </parameter>
+        <parameter name="m/z tolerance (scan-to-scan)">
+            <absolutetolerance>0.01</absolutetolerance>
+            <ppmtolerance>20.0</ppmtolerance>
+        </parameter>
+        <parameter name="Suffix">msn trees</parameter>
+    </batchstep>
+    <batchstep method="io.github.mzmine.modules.dataprocessing.id_localcsvsearch.LocalCSVDatabaseSearchModule" parameter_version="1">
+        <parameter name="Feature lists" type="BATCH_LAST_FEATURELISTS"/>
+        <parameter name="Database file">
+            <current_file>/Users/adrutz/Git/ion-type-analysis/data/source/mcescaf_cleaned_filtered.tsv</current_file>
+        </parameter>
+        <parameter name="Field separator">\t</parameter>
+        <parameter name="Columns">
+            <importtype column="neutral mass" datatype="io.github.mzmine.datamodel.features.types.numbers.NeutralMassType" selected="false"/>
+            <importtype column="mz" datatype="io.github.mzmine.datamodel.features.types.numbers.PrecursorMZType" selected="false"/>
+            <importtype column="rt" datatype="io.github.mzmine.datamodel.features.types.numbers.RTType" selected="false"/>
+            <importtype column="formula" datatype="io.github.mzmine.datamodel.features.types.annotations.formula.FormulaType" selected="false"/>
+            <importtype column="smiles" datatype="io.github.mzmine.datamodel.features.types.annotations.SmilesStructureType" selected="true"/>
+            <importtype column="inchi" datatype="io.github.mzmine.datamodel.features.types.annotations.InChIStructureType" selected="false"/>
+            <importtype column="inchi key" datatype="io.github.mzmine.datamodel.features.types.annotations.InChIKeyStructureType" selected="false"/>
+            <importtype column="compound_name" datatype="io.github.mzmine.datamodel.features.types.annotations.CompoundNameType" selected="true"/>
+            <importtype column="CCS" datatype="io.github.mzmine.datamodel.features.types.numbers.CCSType" selected="false"/>
+            <importtype column="mobility" datatype="io.github.mzmine.datamodel.features.types.numbers.MobilityType" selected="false"/>
+            <importtype column="comment" datatype="io.github.mzmine.datamodel.features.types.annotations.CommentType" selected="false"/>
+            <importtype column="adduct" datatype="io.github.mzmine.datamodel.features.types.annotations.iin.IonTypeType" selected="false"/>
+            <importtype column="PubChemCID" datatype="io.github.mzmine.modules.dataprocessing.id_localcsvsearch.PubChemIdType" selected="false"/>
+            <importtype column="molecular_class" datatype="io.github.mzmine.datamodel.features.types.annotations.compounddb.MolecularClassType" selected="false"/>
+        </parameter>
+        <parameter name="m/z tolerance">
+            <absolutetolerance>0.001</absolutetolerance>
+            <ppmtolerance>10.0</ppmtolerance>
+        </parameter>
+        <parameter name="Retention time tolerance" unit="MINUTES">9999999.0</parameter>
+        <parameter name="Mobility time tolerance">0.01</parameter>
+        <parameter name="CCS tolerance (%)">0.05</parameter>
+        <parameter name="Use isotope matcher" selected="true">
+            <parameter name="Isotope m/z tolerance">
+                <absolutetolerance>0.001</absolutetolerance>
+                <ppmtolerance>20.0</ppmtolerance>
+            </parameter>
+            <parameter name="Minimum isotope intensity (%)">0.05</parameter>
+            <parameter name="Minimum isotope score">0.0</parameter>
+        </parameter>
+        <parameter name="Use adducts" selected="true">
+            <parameter name="Maximum charge">2</parameter>
+            <parameter name="Maximum molecules/cluster">2</parameter>
+            <parameter name="Adducts">
+                <adduct_type selected="false">
+                    <subpart charge="-1" mass_difference="-1.007276" mol_formula="H" name="H" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="1" mass_difference="-5.4858E-4" mol_formula="" name="e" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="1" mass_difference="1.007276" mol_formula="H" name="H" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="1" mass_difference="22.989218" mol_formula="Na" name="Na" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="1" mass_difference="38.963158" mol_formula="K" name="K" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="1" mass_difference="18.033823" mol_formula="NH4" name="NH4" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="1" mass_difference="-5.4858E-4" mol_formula="" name="e" type="ADDUCT"/>
+                    <subpart charge="1" mass_difference="-5.4858E-4" mol_formula="" name="e" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="1" mass_difference="1.007276" mol_formula="H" name="H" type="ADDUCT"/>
+                    <subpart charge="1" mass_difference="1.007276" mol_formula="H" name="H" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="2" mass_difference="39.96149382" mol_formula="Ca" name="Ca" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="2" mass_difference="55.93384" mol_formula="Fe" name="Fe" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="2" mass_difference="47.96953482" mol_formula="Mg" name="Mg" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="1" mass_difference="1.007276" mol_formula="H" name="H" type="ADDUCT"/>
+                    <subpart charge="1" mass_difference="22.989218" mol_formula="Na" name="Na" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="1" mass_difference="1.007276" mol_formula="H" name="H" type="ADDUCT"/>
+                    <subpart charge="1" mass_difference="18.033823" mol_formula="NH4" name="NH4" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="1" mass_difference="1.007276" mol_formula="H" name="H" type="ADDUCT"/>
+                    <subpart charge="1" mass_difference="38.963158" mol_formula="K" name="K" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="-1" mass_difference="-1.007276" mol_formula="H" name="H" type="ADDUCT"/>
+                    <subpart charge="1" mass_difference="22.989218" mol_formula="Na" name="Na" type="ADDUCT"/>
+                    <subpart charge="1" mass_difference="22.989218" mol_formula="Na" name="Na" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="2" mass_difference="39.96149382" mol_formula="Ca" name="Ca" type="ADDUCT"/>
+                    <subpart charge="-1" mass_difference="-1.007276" mol_formula="H" name="H" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="2" mass_difference="55.93384" mol_formula="Fe" name="Fe" type="ADDUCT"/>
+                    <subpart charge="-1" mass_difference="-1.007276" mol_formula="H" name="H" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="false">
+                    <subpart charge="1" mass_difference="0.0" mol_formula="" name="e" type="ADDUCT"/>
+                </adduct_type>
+                <adduct_type selected="true">
+                    <subpart charge="-1" mass_difference="-1.007276" mol_formula="H" name="H" type="ADDUCT"/>
+                    <subpart charge="2" mass_difference="47.96953482" mol_formula="Mg" name="Mg" type="ADDUCT"/>
+                </adduct_type>
+                <modification_type selected="true">
+                    <subpart charge="0" mass_difference="-18.010565" mol_formula="H2O" name="H2O" type="NEUTRAL_LOSS"/>
+                </modification_type>
+                <modification_type selected="true">
+                    <subpart charge="0" mass_difference="-18.010565" mol_formula="H2O" name="H2O" type="NEUTRAL_LOSS"/>
+                    <subpart charge="0" mass_difference="-18.010565" mol_formula="H2O" name="H2O" type="NEUTRAL_LOSS"/>
+                </modification_type>
+                <modification_type selected="false">
+                    <subpart charge="0" mass_difference="-18.010565" mol_formula="H2O" name="H2O" type="NEUTRAL_LOSS"/>
+                    <subpart charge="0" mass_difference="-18.010565" mol_formula="H2O" name="H2O" type="NEUTRAL_LOSS"/>
+                    <subpart charge="0" mass_difference="-18.010565" mol_formula="H2O" name="H2O" type="NEUTRAL_LOSS"/>
+                </modification_type>
+                <modification_type selected="false">
+                    <subpart charge="0" mass_difference="-18.010565" mol_formula="H2O" name="H2O" type="NEUTRAL_LOSS"/>
+                    <subpart charge="0" mass_difference="-18.010565" mol_formula="H2O" name="H2O" type="NEUTRAL_LOSS"/>
+                    <subpart charge="0" mass_difference="-18.010565" mol_formula="H2O" name="H2O" type="NEUTRAL_LOSS"/>
+                    <subpart charge="0" mass_difference="-18.010565" mol_formula="H2O" name="H2O" type="NEUTRAL_LOSS"/>
+                </modification_type>
+                <modification_type selected="false">
+                    <subpart charge="0" mass_difference="-18.010565" mol_formula="H2O" name="H2O" type="NEUTRAL_LOSS"/>
+                    <subpart charge="0" mass_difference="-18.010565" mol_formula="H2O" name="H2O" type="NEUTRAL_LOSS"/>
+                    <subpart charge="0" mass_difference="-18.010565" mol_formula="H2O" name="H2O" type="NEUTRAL_LOSS"/>
+                    <subpart charge="0" mass_difference="-18.010565" mol_formula="H2O" name="H2O" type="NEUTRAL_LOSS"/>
+                    <subpart charge="0" mass_difference="-18.010565" mol_formula="H2O" name="H2O" type="NEUTRAL_LOSS"/>
+                </modification_type>
+                <modification_type selected="false">
+                    <subpart charge="0" mass_difference="-17.026549" mol_formula="NH3" name="NH3" type="NEUTRAL_LOSS"/>
+                </modification_type>
+                <modification_type selected="false">
+                    <subpart charge="0" mass_difference="15.99491462" mol_formula="O" name="O" type="CLUSTER"/>
+                </modification_type>
+                <modification_type selected="false">
+                    <subpart charge="0" mass_difference="-27.994915" mol_formula="CO" name="CO" type="NEUTRAL_LOSS"/>
+                </modification_type>
+                <modification_type selected="false">
+                    <subpart charge="0" mass_difference="-43.989829" mol_formula="CO2" name="CO2" type="NEUTRAL_LOSS"/>
+                </modification_type>
+                <modification_type selected="false">
+                    <subpart charge="0" mass_difference="-28.031301" mol_formula="C2H4" name="C2H4" type="NEUTRAL_LOSS"/>
+                </modification_type>
+                <modification_type selected="false">
+                    <subpart charge="0" mass_difference="46.005479" mol_formula="CHOOH" name="HFA" type="CLUSTER"/>
+                </modification_type>
+                <modification_type selected="false">
+                    <subpart charge="0" mass_difference="60.021129" mol_formula="CH3COOH" name="HAc" type="CLUSTER"/>
+                </modification_type>
+                <modification_type selected="true">
+                    <subpart charge="0" mass_difference="32.026215" mol_formula="CH3OH" name="MeOH" type="CLUSTER"/>
+                </modification_type>
+                <modification_type selected="false">
+                    <subpart charge="0" mass_difference="41.026549" mol_formula="CH3CN" name="ACN" type="CLUSTER"/>
+                </modification_type>
+                <modification_type selected="false">
+                    <subpart charge="0" mass_difference="60.058064" mol_formula="C3H8O" name="IsoProp" type="CLUSTER"/>
+                </modification_type>
+            </parameter>
+        </parameter>
+        <parameter name="Filter filename header" selected="true">unique_sample_id</parameter>
+        <parameter name="Append comment fields"/>
+    </batchstep>
+    <batchstep method="io.github.mzmine.modules.dataprocessing.filter_rowsfilter.RowsFilterModule" parameter_version="2">
+        <parameter name="Feature lists" type="BATCH_LAST_FEATURELISTS"/>
+        <parameter name="Name suffix">filtered</parameter>
+        <parameter name="Minimum aligned features (samples)" selected="false">
+            <abs>1</abs>
+            <rel>0.0</rel>
+        </parameter>
+        <parameter name="Minimum features in an isotope pattern" selected="false">2</parameter>
+        <parameter name="Validate 13C isotope pattern" selected="false">
+            <parameter name="m/z tolerance">
+                <absolutetolerance>5.0E-4</absolutetolerance>
+                <ppmtolerance>10.0</ppmtolerance>
+            </parameter>
+            <parameter name="Max charge">1</parameter>
+            <parameter name="Estimate minimum carbon">true</parameter>
+            <parameter name="Remove if 13C">true</parameter>
+            <parameter name="Exclude isotopes">H,C,N,O,S</parameter>
+        </parameter>
+        <parameter name="Remove redundant isotope rows">false</parameter>
+        <parameter name="m/z" selected="false"/>
+        <parameter name="Retention time" selected="false">
+            <min>0.01</min>
+            <max>0.6</max>
+        </parameter>
+        <parameter name="features duration range" selected="true">
+            <min>0.01</min>
+            <max>999.0</max>
+        </parameter>
+        <parameter name="Chromatographic FWHM" selected="false">
+            <min>0.01</min>
+            <max>999.0</max>
+        </parameter>
+        <parameter name="Charge" selected="false">
+            <min>1</min>
+            <max>2</max>
+        </parameter>
+        <parameter name="Kendrick mass defect" selected="false">
+            <parameter name="Kendrick mass defect">
+                <min>0.0</min>
+                <max>1.0</max>
+            </parameter>
+            <parameter name="Kendrick mass base"/>
+            <parameter name="Shift">0.0</parameter>
+            <parameter name="Charge">1</parameter>
+            <parameter name="Divisor">1</parameter>
+            <parameter name="Use Remainder of Kendrick mass">false</parameter>
+        </parameter>
+        <parameter name="Parameter">No parameters defined</parameter>
+        <parameter name="Only identified?">true</parameter>
+        <parameter name="Text in identity" selected="false"/>
+        <parameter name="Text in comment" selected="false"/>
+        <parameter name="Keep or remove rows">Keep rows that match all criteria</parameter>
+        <parameter name="Feature with MS2 scan">false</parameter>
+        <parameter name="Never remove feature with MS2">false</parameter>
+        <parameter name="Never remove annotated rows">false</parameter>
+        <parameter name="Reset the feature number ID">false</parameter>
+        <parameter name="Mass defect" selected="false"/>
+        <parameter name="Original feature list">REMOVE</parameter>
+    </batchstep>
+    <batchstep method="io.github.mzmine.modules.dataprocessing.id_ion_type.IonTypeAnalysisModule" parameter_version="1">
+        <parameter name="Feature lists" type="BATCH_LAST_FEATURELISTS"/>
+        <parameter name="MS data selection">Processed</parameter>
+        <parameter name="ms1 tolerance">
+            <absolutetolerance>0.005</absolutetolerance>
+            <ppmtolerance>10.0</ppmtolerance>
+        </parameter>
+        <parameter name="ms2 tolerance">
+            <absolutetolerance>0.01</absolutetolerance>
+            <ppmtolerance>20.0</ppmtolerance>
+        </parameter>
+    </batchstep>
+    <batchstep method="io.github.mzmine.modules.io.export_features_csv.CSVExportModularModule" parameter_version="1">
+        <parameter name="Feature lists" type="BATCH_LAST_FEATURELISTS"/>
+        <parameter name="Filename">
+            <current_file>/Users/adrutz/Git/ion-type-analysis/data/di_ot_2.5_pos/{}.csv</current_file>
+        </parameter>
+        <parameter name="Field separator">,</parameter>
+        <parameter name="Identification separator">;</parameter>
+        <parameter name="Remove empty columns">true</parameter>
+        <parameter name="Filter rows">ALL</parameter>
+    </batchstep>
+</batch>
