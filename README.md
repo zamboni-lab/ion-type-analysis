@@ -121,10 +121,7 @@ Listed alphabetically below are the individuals whose contributions—whether th
 - [Steffen](https://github.com/SteffenHeu)
 - [Yasin](https://github.com/YasinEl)
 
-:warning: TODO :warning:
-
-Someone else missing?
-
 ## Contact
 
-:warning: TODO :warning:
+To promote transparency and dialogue, we encourage you to share your thoughts and questions in the discussions section (<https://github.com/zamboni-lab/ion-type-analysis/discussions>). 
+Your contributions are important for improving our shared knowledge.
