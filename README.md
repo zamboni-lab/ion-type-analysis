@@ -60,8 +60,8 @@ To use the MZmine ion type analysis module:
 ### Example
 
 ```bash
-# NOTE: "mzmine refers to the MZmine executable built from the above mentioned branch
-mzmine -batch ".mzmine/batch/di_tof_example.mzbatch" -i "./data/example/*.mzML" -o "./data/example/di_tof_10_20ev_pos/{}"
+# NOTE: `mzmine-dev` refers to the MZmine executable built from the above mentioned branch
+mzmine-dev -batch ".mzmine/batch/di_tof_example.mzbatch" -i "./data/example/*.mzML" -o "./data/example/di_tof_10_20ev_pos/{}"
 ```
 
 This will give you the results for the example file.
@@ -75,18 +75,18 @@ To reproduce the full results:
 :warning: not fully working for now because of DI-ToF dataset not being available!
 
 ```bash
-mzmine -batch ".mzmine/batch/di_ot_2.5_neg.mzbatch" -i "./data/source/20231123_mzml_mce_scaffold_negative/*.mzML" -o "./data/di_ot_2.5_neg/{}"
-mzmine -batch ".mzmine/batch/di_ot_2.5_pos.mzbatch" -i "./data/source/20231123_mzml_mce_scaffold_positive/*.mzML" -o "./data/di_ot_2.5_pos/{}"
-mzmine -batch ".mzmine/batch/di_tof_0_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/20/*.mzML" -o "./data/di_tof_0_20ev_pos/{}"
-mzmine -batch ".mzmine/batch/di_tof_10_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/20/*.mzML" -o "./data/di_tof_10_20ev_pos/{}"
-mzmine -batch ".mzmine/batch/di_tof_100_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/20/*.mzML" -o "./data/di_tof_100_20ev_pos/{}"
-mzmine -batch ".mzmine/batch/di_tof_0_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/40/*.mzML" -o "./data/di_tof_0_40ev_pos/{}"
-mzmine -batch ".mzmine/batch/di_tof_10_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/40/*.mzML" -o "./data/di_tof_10_40ev_pos/{}"
-mzmine -batch ".mzmine/batch/di_tof_100_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/40/*.mzML" -o "./data/di_tof_100_40ev_pos/{}"
-mzmine -batch ".mzmine/batch/di_tof_0_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/60/*.mzML" -o "./data/di_tof_0_60ev_pos/{}"
-mzmine -batch ".mzmine/batch/di_tof_10_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/60/*.mzML" -o "./data/di_tof_10_60ev_pos/{}"
-mzmine -batch ".mzmine/batch/di_tof_100_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/60/*.mzML" -o "./data/di_tof_100_60ev_pos/{}"
-mzmine -batch ".mzmine/batch/lc_at_5_pos.mzbatch" -i "./data/source/MSV000093526/*.mzML" -o "./data/lc_at_5_pos/{}"
+mzmine-dev -batch ".mzmine/batch/di_ot_2.5_neg.mzbatch" -i "./data/source/20231123_mzml_mce_scaffold_negative/*.mzML" -o "./data/di_ot_2.5_neg/{}"
+mzmine-dev -batch ".mzmine/batch/di_ot_2.5_pos.mzbatch" -i "./data/source/20231123_mzml_mce_scaffold_positive/*.mzML" -o "./data/di_ot_2.5_pos/{}"
+mzmine-dev -batch ".mzmine/batch/di_tof_0_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/20/*.mzML" -o "./data/di_tof_0_20ev_pos/{}"
+mzmine-dev -batch ".mzmine/batch/di_tof_10_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/20/*.mzML" -o "./data/di_tof_10_20ev_pos/{}"
+mzmine-dev -batch ".mzmine/batch/di_tof_100_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/20/*.mzML" -o "./data/di_tof_100_20ev_pos/{}"
+mzmine-dev -batch ".mzmine/batch/di_tof_0_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/40/*.mzML" -o "./data/di_tof_0_40ev_pos/{}"
+mzmine-dev -batch ".mzmine/batch/di_tof_10_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/40/*.mzML" -o "./data/di_tof_10_40ev_pos/{}"
+mzmine-dev -batch ".mzmine/batch/di_tof_100_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/40/*.mzML" -o "./data/di_tof_100_40ev_pos/{}"
+mzmine-dev -batch ".mzmine/batch/di_tof_0_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/60/*.mzML" -o "./data/di_tof_0_60ev_pos/{}"
+mzmine-dev -batch ".mzmine/batch/di_tof_10_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/60/*.mzML" -o "./data/di_tof_10_60ev_pos/{}"
+mzmine-dev -batch ".mzmine/batch/di_tof_100_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/60/*.mzML" -o "./data/di_tof_100_60ev_pos/{}"
+mzmine-dev -batch ".mzmine/batch/lc_at_5_pos.mzbatch" -i "./data/source/MSV000093526/*.mzML" -o "./data/lc_at_5_pos/{}"
 ```
 
 #### Standards annotation
