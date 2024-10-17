@@ -515,7 +515,7 @@
         <parameter name="Denormalize fragment scans (traps)">false</parameter>
         <parameter name="Mass detector" selected_item="Factor of lowest signal">
             <module name="Factor of lowest signal">
-                <parameter name="Noise factor">0</parameter>
+                <parameter name="Noise factor">5</parameter>
             </module>
             <module name="Auto">
                 <parameter name="Noise level"/>
@@ -801,7 +801,7 @@
     <batchstep method="io.github.mzmine.modules.io.export_features_csv.CSVExportModularModule" parameter_version="1">
         <parameter name="Feature lists" type="BATCH_LAST_FEATURELISTS"/>
         <parameter name="Filename">
-            <current_file>/Users/adrutz/Git/ion-type-analysis/data/di_tof_0_20ev_pos/{}.csv</current_file>
+            <current_file>/Users/adrutz/Git/ion-type-analysis/data/di_tof_5_20ev_pos/{}.csv</current_file>
         </parameter>
         <parameter name="Field separator">,</parameter>
         <parameter name="Identification separator">;</parameter>

@@ -42,15 +42,39 @@ To replicate the full analysis, you will need the following datasets:
 For the files on MASSIVE, a convenience script using <https://github.com/Wang-Bioinformatics-Lab/downloadpublicdata> is available:
 
 ```bash
-poetry run python3 ./notebooks/download_massive.py ./data/MSV000093526.txt ./data/source/MSV000093526 ./data/source/MSV000093526/MSV000093526_summary.tsv
+poetry run python3 ./notebooks/download_massive.py ./data/MSV000093526.txt /Volumes/T7_Shield/MSV000093526 /Volumes/T7_Shield/MSV000093526/MSV000093526_summary.tsv
 ```
 
 For the files on Zenodo, a convenience script is available:
 
 ```bash
-poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 20231123_mzml_mce_scaffold_positive.zip ./data/source/20231123_mzml_mce_scaffold_positive.zip --unzip
+poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 20220601_mzml_mce_bioactive_positive.zip /Volumes/T7_Shield/20220601_mzml_mce_bioactive_positive.zip.zip --unzip
 
-poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 20231123_mzml_mce_scaffold_negative.zip ./data/source/20231123_mzml_mce_scaffold_negative.zip --unzip
+poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 20230130_mzml_mce_bioactive_negative.zip /Volumes/T7_Shield/20230130_mzml_mce_bioactive_negative.zip --unzip
+
+poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 20230404_mzml_pluskal_nih_negative.zip /Volumes/T7_Shield/20230404_mzml_pluskal_nih_negative.zip --unzip
+
+poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 20230404_mzml_pluskal_nih_positive.zip /Volumes/T7_Shield/20230404_mzml_pluskal_nih_positive.zip --unzip
+
+poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 20231123_mzml_mce_scaffold_negative.zip /Volumes/T7_Shield/20231123_mzml_mce_scaffold_negative.zip --unzip
+
+poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 20231123_mzml_mce_scaffold_positive.zip /Volumes/T7_Shield/20231123_mzml_mce_scaffold_positive.zip --unzip
+
+poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 20231124_mzml_otavapep_negative.zip /Volumes/T7_Shield/20231124_mzml_otavapep_negative.zip --unzip
+
+poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 20231124_mzml_otavapep_positive.zip /Volumes/T7_Shield/20231124_mzml_otavapep_positive.zip --unzip
+
+poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 mzml_20240405_pluskal_enammol_MSn_negative.zip /Volumes/T7_Shield/mzml_20240405_pluskal_enammol_MSn_negative.zip --unzip
+
+poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 mzml_20240405_pluskal_enammol_MSn_positive.zip /Volumes/T7_Shield/mzml_20240405_pluskal_enammol_MSn_positive.zip --unzip
+
+poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 mzml_20240408_pluskal_mcedrug_MSn_negative.zip /Volumes/T7_Shield/mzml_20240408_pluskal_mcedrug_MSn_negative.zip --unzip
+
+poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 mzml_20240408_pluskal_mcedrug_MSn_positive.zip /Volumes/T7_Shield/mzml_20240408_pluskal_mcedrug_MSn_positive.zip --unzip
+
+poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 mzml_20240502_pluskal_enamdisc_MSn_negative.zip /Volumes/T7_Shield/mzml_20240502_pluskal_enamdisc_MSn_negative.zip --unzip
+
+poetry run python3 ./notebooks/download_zenodo.py https://doi.org/10.5281/zenodo.13890851 mzml_20240502_pluskal_enamdisc_MSn_positive.zip /Volumes/T7_Shield/mzml_20240502_pluskal_enamdisc_MSn_positive.zip --unzip
 ```
 
 ## Performing the analysis
@@ -75,18 +99,53 @@ To reproduce the full results:
 :warning: not fully working for now because of DI-ToF dataset not being available!
 
 ```bash
-mzmine-dev -batch ".mzmine/batch/di_ot_2.5_neg.mzbatch" -i "./data/source/20231123_mzml_mce_scaffold_negative/*.mzML" -o "./data/di_ot_2.5_neg/{}"
-mzmine-dev -batch ".mzmine/batch/di_ot_2.5_pos.mzbatch" -i "./data/source/20231123_mzml_mce_scaffold_positive/*.mzML" -o "./data/di_ot_2.5_pos/{}"
-mzmine-dev -batch ".mzmine/batch/di_tof_0_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/20/*.mzML" -o "./data/di_tof_0_20ev_pos/{}"
-mzmine-dev -batch ".mzmine/batch/di_tof_10_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/20/*.mzML" -o "./data/di_tof_10_20ev_pos/{}"
-mzmine-dev -batch ".mzmine/batch/di_tof_100_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/20/*.mzML" -o "./data/di_tof_100_20ev_pos/{}"
-mzmine-dev -batch ".mzmine/batch/di_tof_0_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/40/*.mzML" -o "./data/di_tof_0_40ev_pos/{}"
-mzmine-dev -batch ".mzmine/batch/di_tof_10_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/40/*.mzML" -o "./data/di_tof_10_40ev_pos/{}"
-mzmine-dev -batch ".mzmine/batch/di_tof_100_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/40/*.mzML" -o "./data/di_tof_100_40ev_pos/{}"
-mzmine-dev -batch ".mzmine/batch/di_tof_0_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/60/*.mzML" -o "./data/di_tof_0_60ev_pos/{}"
-mzmine-dev -batch ".mzmine/batch/di_tof_10_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/60/*.mzML" -o "./data/di_tof_10_60ev_pos/{}"
-mzmine-dev -batch ".mzmine/batch/di_tof_100_pos.mzbatch" -i "/Volumes/biol_imsb_sauer_1/users/Adriano/01_projects/02_library/02_raw_data/inhouse/01_zeno/all_converted/CID/60/*.mzML" -o "./data/di_tof_100_60ev_pos/{}"
-mzmine-dev -batch ".mzmine/batch/lc_at_5_pos.mzbatch" -i "./data/source/MSV000093526/*.mzML" -o "./data/lc_at_5_pos/{}"
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_ot_5_enamdisc_neg.mzbatch" -i "/Volumes/T7_Shield/20231123_mzml_mce_scaffold_negative/*.mzML" -o "./data/di_ot_5_enamdisc_neg/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_ot_5_enamdisc_pos.mzbatch" -i "/Volumes/T7_Shield/20231123_mzml_mce_scaffold_positive/*.mzML" -o "./data/di_ot_5_enamdisc_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_ot_5_enammol_neg.mzbatch" -i "/Volumes/T7_Shield/20231123_mzml_mce_scaffold_negative/*.mzML" -o "./data/di_ot_5_enammol_neg/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_ot_5_enammol_pos.mzbatch" -i "/Volumes/T7_Shield/20231123_mzml_mce_scaffold_positive/*.mzML" -o "./data/di_ot_5_enammol_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_ot_5_mcebio_neg.mzbatch" -i "/Volumes/T7_Shield/20231123_mzml_mce_scaffold_negative/*.mzML" -o "./data/di_ot_5_mcebio_neg/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_ot_5_mcebio_pos.mzbatch" -i "/Volumes/T7_Shield/20231123_mzml_mce_scaffold_positive/*.mzML" -o "./data/di_ot_5_mcebio_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_ot_5_mcedrug_neg.mzbatch" -i "/Volumes/T7_Shield/20231123_mzml_mce_scaffold_negative/*.mzML" -o "./data/di_ot_5_mcedrug_neg/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_ot_5_mcedrug_pos.mzbatch" -i "/Volumes/T7_Shield/20231123_mzml_mce_scaffold_positive/*.mzML" -o "./data/di_ot_5_mcedrug_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_ot_5_mcescaf_neg.mzbatch" -i "/Volumes/T7_Shield/20231123_mzml_mce_scaffold_negative/*.mzML" -o "./data/di_ot_5_mcescaf_neg/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_ot_5_mcescaf_pos.mzbatch" -i "/Volumes/T7_Shield/20231123_mzml_mce_scaffold_positive/*.mzML" -o "./data/di_ot_5_mcescaf_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_ot_5_nihnp_neg.mzbatch" -i "/Volumes/T7_Shield/20231123_mzml_mce_scaffold_negative/*.mzML" -o "./data/di_ot_5_nihnp_neg/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_ot_5_nihnp_pos.mzbatch" -i "/Volumes/T7_Shield/20231123_mzml_mce_scaffold_positive/*.mzML" -o "./data/di_ot_5_nihnp_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_ot_5_otavapep_neg.mzbatch" -i "/Volumes/T7_Shield/20231123_mzml_mce_scaffold_negative/*.mzML" -o "./data/di_ot_5_otavapep_neg/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_ot_5_otavapep_pos.mzbatch" -i "/Volumes/T7_Shield/20231123_mzml_mce_scaffold_positive/*.mzML" -o "./data/di_ot_5_otavapep_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_tof_0_pos.mzbatch" -i "/Volumes/T7_Shield/01_zeno/all_converted/CID/20/*.mzML" -o "./data/di_tof_0_20ev_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_tof_5_pos.mzbatch" -i "/Volumes/T7_Shield/01_zeno/all_converted/CID/20/*.mzML" -o "./data/di_tof_5_20ev_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_tof_10_pos.mzbatch" -i "/Volumes/T7_Shield/01_zeno/all_converted/CID/20/*.mzML" -o "./data/di_tof_10_20ev_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_tof_0_pos.mzbatch" -i "/Volumes/T7_Shield/01_zeno/all_converted/CID/40/*.mzML" -o "./data/di_tof_0_40ev_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_tof_5_pos.mzbatch" -i "/Volumes/T7_Shield/01_zeno/all_converted/CID/40/*.mzML" -o "./data/di_tof_5_40ev_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_tof_10_pos.mzbatch" -i "/Volumes/T7_Shield/01_zeno/all_converted/CID/40/*.mzML" -o "./data/di_tof_10_40ev_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_tof_0_pos.mzbatch" -i "/Volumes/T7_Shield/01_zeno/all_converted/CID/60/*.mzML" -o "./data/di_tof_0_60ev_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_tof_5_pos.mzbatch" -i "/Volumes/T7_Shield/01_zeno/all_converted/CID/60/*.mzML" -o "./data/di_tof_5_60ev_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/di_tof_10_pos.mzbatch" -i "/Volumes/T7_Shield/01_zeno/all_converted/CID/60/*.mzML" -o "./data/di_tof_10_60ev_pos/{}"
+
+mzmine-dev -t "/Volumes/T7_Shield/tmp" -b ".mzmine/batch/lc_at_5_pos.mzbatch" -i "/Volumes/T7_Shield/MSV000093526/*.mzML" -o "./data/lc_at_5_pos/{}"
 ```
 
 #### Standards annotation
@@ -97,10 +156,16 @@ This is absolutely not required (so you can apply the methodology on complex, un
 
 #### Known issues and fixes
 
-Some of the negative runs in the DI-Orbitrap dataset do not contain any matching scan and would cause issues if not removed:
+Some of the zip contain `.file.mzML`. To get rid of those:
 
 ```bash
-poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_2.5_neg
+rm .??*
+```
+
+Some of the runs did not get any match:
+
+```bash
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_neg
 ```
 
 ## Reproducing the figures

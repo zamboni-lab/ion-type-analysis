@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><batch mzmine_version="4.3.22">
     <batchstep method="io.github.mzmine.modules.io.import_rawdata_all.AllSpectralDataImportModule" parameter_version="1">
         <parameter name="File names">
-            <file>/Users/adrutz/Git/ion-type-analysis/data/source/MSV000093526/023_Sa04_Water_POS.mzML</file>
+            <file>/Volumes/T7_Shield/MSV000093526/023_Sa04_Water_POS.mzML</file>
         </parameter>
         <parameter name="Advanced import" selected="false">
             <parameter name="Scan filters" selected="false">
@@ -132,8 +132,8 @@
             <parameter name="Spectrum type">ANY</parameter>
         </parameter>
         <parameter name="Minimum consecutive scans">5</parameter>
-        <parameter name="Minimum intensity for consecutive scans">1000000.0</parameter>
-        <parameter name="Minimum absolute height">5000000.0</parameter>
+        <parameter name="Minimum intensity for consecutive scans">5000000.0</parameter>
+        <parameter name="Minimum absolute height">10000000.0</parameter>
         <parameter name="m/z tolerance (scan-to-scan)">
             <absolutetolerance>0.005</absolutetolerance>
             <ppmtolerance>10.0</ppmtolerance>
