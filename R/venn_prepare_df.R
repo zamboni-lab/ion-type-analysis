@@ -9,7 +9,7 @@
 venn_prepare_df <- function(df) {
   return(data.frame(
     adducts = c(
-      rep(FALSE, df$unexplained),
+      rep(FALSE, df$`non-redundant`),
       rep(TRUE, df$ao),
       rep(FALSE, df$co),
       rep(FALSE, df$io),
@@ -19,7 +19,7 @@ venn_prepare_df <- function(df) {
       rep(TRUE, df$ei)
     ),
     fragments = c(
-      rep(FALSE, df$unexplained),
+      rep(FALSE, df$`non-redundant`),
       rep(FALSE, df$ao),
       rep(TRUE, df$co),
       rep(FALSE, df$io),
@@ -29,7 +29,7 @@ venn_prepare_df <- function(df) {
       rep(TRUE, df$ei)
     ),
     isotopes = c(
-      rep(FALSE, df$unexplained),
+      rep(FALSE, df$`non-redundant`),
       rep(FALSE, df$ao),
       rep(FALSE, df$co),
       rep(TRUE, df$io),

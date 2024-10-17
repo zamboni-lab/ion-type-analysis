@@ -1,4 +1,4 @@
-#' Find best combination of windows
+#' Select intervals
 #'
 #' @param df
 #'

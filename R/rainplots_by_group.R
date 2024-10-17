@@ -1,6 +1,4 @@
-## THIS NEEDS POLISHING
-
-#' Title TODO
+#' Rainplots by group
 #'
 #' @param df
 #' @param group

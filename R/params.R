@@ -9,11 +9,11 @@ COLNAMES <- c(
   "smiles" = "compound_db_identity:smiles",
   "ms1" = "ion_type_analysis:ms1_signals",
   "ms2" = "ion_type_analysis:ms2_signals_all_precursors",
-  "fragments" = "ion_type_analysis:common_signals",
-  "adducts" = "ion_type_analysis:ms1_adducts_and_co",
-  "isotopes" = "ion_type_analysis:ms1_isotopes",
-  "unexplained" = "ion_type_analysis:ms1_unexplained",
-  "unexplained_intensity_percent" = "ion_type_analysis:ms1_unexplained_intensity_percent",
+  "fragment" = "ion_type_analysis:common_signals",
+  "adduct" = "ion_type_analysis:ms1_adducts_and_co",
+  "isotope" = "ion_type_analysis:ms1_isotopes",
+  "non-redundant" = "ion_type_analysis:ms1_unexplained",
+  "non-redundant intensity" = "ion_type_analysis:ms1_unexplained_intensity_percent",
   "ms1_common_percent" = "ion_type_analysis:ms1_common_signals_percent",
   "ms2_common_percent" = "ion_type_analysis:ms2_common_signals_percent",
   "ms1_common_intensity_percent" = "ion_type_analysis:ms1_common_intensity_percent",
@@ -38,6 +38,6 @@ EXAMPLES <- c(
 
 EXTENSION <- "png"
 
-SIGNAL_TYPES <- c("adducts", "fragments", "isotopes", "unexplained")
+SIGNAL_TYPES <- c("adduct", "fragment", "isotope", "non-redundant")
 
-SIGNAL_TYPES_FULL <- c("unexplained", "ao", "io", "co", "aii", "aic", "iic", "ei")
+SIGNAL_TYPES_FULL <- c("non-redundant", "ao", "io", "co", "aii", "aic", "iic", "ei")
