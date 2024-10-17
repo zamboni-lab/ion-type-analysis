@@ -31,8 +31,8 @@ COLNAMES <- c(
 )
 
 EXAMPLES <- c(
-  "di_ot_2.5_pos",
-  "di_tof_10_20ev_pos",
+  "di_ot_5_mcescaf_pos",
+  "di_tof_5_20ev_pos",
   "lc_at_5_pos"
 )
 

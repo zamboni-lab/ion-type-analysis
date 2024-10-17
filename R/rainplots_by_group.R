@@ -20,7 +20,7 @@ rainplots_by_group <- function(df,
                                subtitle = "",
                                caption = "") {
   df |>
-    dplyr::filter(!is.na(!!as.name(group))) |>
+    tidytable::filter(!is.na(!!as.name(group))) |>
     ggplot2::ggplot(ggplot2::aes(
       x = !!as.name(group),
       y = !!as.name(value),

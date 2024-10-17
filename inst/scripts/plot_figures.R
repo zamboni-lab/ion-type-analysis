@@ -81,7 +81,7 @@ if (!"example=TRUE" %in% args) {
 }
 rainplot_tof_2_before <- rainplots_by_group(
   df = df_pivoted_before |>
-    tidytable::filter(cutoff == "di_tof_10_20ev_pos"),
+    tidytable::filter(cutoff == "di_tof_5_20ev_pos"),
   group = "name",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
@@ -89,7 +89,7 @@ rainplot_tof_2_before <- rainplots_by_group(
 # rainplot_tof_2_before
 rainplot_orbitrap_pos_before <- rainplots_by_group(
   df = df_pivoted_before |>
-    tidytable::filter(cutoff == "di_ot_2.5_pos"),
+    tidytable::filter(cutoff == "di_ot_5_mcescaf_pos"),
   group = "name",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
@@ -99,11 +99,11 @@ rainplot_orbitrap_pos_before <- rainplots_by_group(
 ## Switching values to single identity only
 df_combined_single <- df_combined |>
   tidytable::mutate(
-    fragments = co,
-    adducts = ao + aic,
-    isotopes = io + aii + iic + ei
+    fragment = co,
+    adduct = ao + aic,
+    isotope = io + aii + iic + ei
   ) |>
-  tidytable::mutate(fragmented_percent = fragments / ms1)
+  tidytable::mutate(fragmented_percent = fragment / ms1)
 
 ## Pivoting
 df_pivoted <- df_combined_single |>
@@ -128,7 +128,7 @@ rainplot_tof_1 <- rainplots_by_group(
 # rainplot_tof_1
 rainplot_tof_2 <- rainplots_by_group(
   df = df_pivoted |>
-    tidytable::filter(cutoff == "di_tof_10_20ev_pos"),
+    tidytable::filter(cutoff == "di_tof_5_20ev_pos"),
   group = "name",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
@@ -136,7 +136,7 @@ rainplot_tof_2 <- rainplots_by_group(
 # rainplot_tof_2
 rainplot_tof_2_40ev <- rainplots_by_group(
   df = df_pivoted |>
-    tidytable::filter(cutoff == "di_tof_10_40ev_pos"),
+    tidytable::filter(cutoff == "di_tof_5_40ev_pos"),
   group = "name",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
@@ -144,7 +144,7 @@ rainplot_tof_2_40ev <- rainplots_by_group(
 # rainplot_tof_2_40ev
 rainplot_tof_2_60ev <- rainplots_by_group(
   df = df_pivoted |>
-    tidytable::filter(cutoff == "di_tof_10_60ev_pos"),
+    tidytable::filter(cutoff == "di_tof_5_60ev_pos"),
   group = "name",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
@@ -152,7 +152,7 @@ rainplot_tof_2_60ev <- rainplots_by_group(
 # rainplot_tof_2_60ev
 rainplot_tof_3 <- rainplots_by_group(
   df = df_pivoted |>
-    tidytable::filter(cutoff == "di_tof_100_20ev_pos"),
+    tidytable::filter(cutoff == "di_tof_10_20ev_pos"),
   group = "name",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
@@ -160,7 +160,7 @@ rainplot_tof_3 <- rainplots_by_group(
 # rainplot_tof_3
 rainplot_orbitrap_pos <- rainplots_by_group(
   df = df_pivoted |>
-    tidytable::filter(cutoff == "di_ot_2.5_pos"),
+    tidytable::filter(cutoff == "di_ot_5_mcescaf_pos"),
   group = "name",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
@@ -168,7 +168,7 @@ rainplot_orbitrap_pos <- rainplots_by_group(
 # rainplot_orbitrap_pos
 rainplot_orbitrap_neg <- rainplots_by_group(
   df = df_pivoted |>
-    tidytable::filter(cutoff == "di_ot_2.5_neg"),
+    tidytable::filter(cutoff == "di_ot_5_mcescaf_neg"),
   group = "name",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
