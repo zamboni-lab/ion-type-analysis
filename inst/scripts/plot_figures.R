@@ -14,7 +14,7 @@ install_dependencies_2(dependencies = dependencies)
 ## Switch for example mode
 if ("example=TRUE" %in% args) {
   message("Running the example mode")
-  path_dirs_unknowns <- list(di_tof_10_20ev_pos = "data/example/di_tof_10_20ev_pos")
+  path_dirs_unknowns <- list(di_tof_5_20ev_pos = "data/example/di_tof_5_20ev_pos")
 }
 
 ## Import

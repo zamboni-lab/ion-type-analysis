@@ -52,6 +52,7 @@ Collate:
     'ionTypeAnalysis-package.R'
     'params.R'
     'paths.R'
+    'plot_distributions.R'
     'rainplots_by_group.R'
     'select_intervals.R'
     'venn_highlight_regions.R'
