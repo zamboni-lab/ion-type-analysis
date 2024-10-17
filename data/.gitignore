@@ -1,5 +1,17 @@
+di_ot_5_enamdisc_neg/*.csv
+di_ot_5_enamdisc_pos/*.csv
+di_ot_5_enammol_neg/*.csv
+di_ot_5_enammol_pos/*.csv
+di_ot_5_mcebio_neg/*.csv
+di_ot_5_mcebio_pos/*.csv
+di_ot_5_mcedrug_neg/*.csv
+di_ot_5_mcedrug_pos/*.csv
 di_ot_5_mcescaf_neg/*.csv
 di_ot_5_mcescaf_pos/*.csv
+di_ot_5_nihnp_neg/*.csv
+di_ot_5_nihnp_pos/*.csv
+di_ot_5_otavapep_neg/*.csv
+di_ot_5_otavapep_pos/*.csv
 di_tof_0_20ev_pos/*.csv
 di_tof_0_40ev_pos/*.csv
 di_tof_0_60ev_pos/*.csv
