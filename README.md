@@ -165,7 +165,53 @@ rm .??*
 Some of the runs did not get any match:
 
 ```bash
-poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_neg
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_enamdisc_neg
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_enamdisc_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_enammol_neg
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_enammol_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_mcebio_neg
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_mcebio_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_mcedrug_neg
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_mcedrug_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_mcescaf_neg
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_mcescaf_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_nihnp_neg
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_nihnp_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_otavapep_neg
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_otavapep_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_ot_5_otavapep_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_tof_0_20ev_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_tof_0_40ev_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_tof_0_60ev_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_tof_5_20ev_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_tof_5_40ev_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_tof_5_60ev_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_tof_10_20ev_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_tof_10_40ev_pos
+
+poetry run python3 ./notebooks/remove_empty.py -d ./data/di_tof_10_60ev_pos
 ```
 
 ## Reproducing the figures

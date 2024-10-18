@@ -13,20 +13,24 @@
 #'
 #' @examples
 plot_distributions <- function(df,
-                               facet,
+                               facet = NULL,
                                group,
                                value,
                                axis_label = "",
                                title = "",
                                subtitle = "",
                                caption = "") {
-  df |>
+  df <- df |>
     tidytable::filter(!is.na(!!as.name(group))) |>
     ggplot2::ggplot(ggplot2::aes(
       x = !!as.name(value),
       color = !!as.name(group)
-    )) +
-    ggplot2::facet_grid(rows = ggplot2::vars(!!as.name(facet))) +
+    ))
+  if (!is.null(facet)) {
+    df <- df +
+      ggplot2::facet_grid(rows = ggplot2::vars(!!as.name(facet)))
+  }
+  df <- df +
     ggdist::stat_halfeye(
       ggplot2::aes(
         color = !!as.name(group),
@@ -38,18 +42,15 @@ plot_distributions <- function(df,
     ggplot2::stat_summary(
       geom = "text",
       fun = "median",
-      ggplot2::aes(
-        y = NA,
-        label = round(ggplot2::after_stat(x), 2),
-      ),
+      ggplot2::aes(y = NA, label = round(ggplot2::after_stat(x), 2)),
       fontface = "bold",
       show.legend = FALSE
     ) +
     ggplot2::scale_color_manual(values = pal, name = "") +
     ggplot2::scale_fill_manual(values = pal, name = "") +
     ggplot2::labs(
-      x = NULL,
-      y = axis_label,
+      x = axis_label,
+      y = "Density",
       title = title,
       subtitle = subtitle,
       caption = caption

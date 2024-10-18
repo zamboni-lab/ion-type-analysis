@@ -14,7 +14,7 @@ install_dependencies_2(dependencies = dependencies)
 ## Switch for example mode
 if ("example=TRUE" %in% args) {
   message("Running the example mode")
-  path_dirs_unknowns <- list(di_tof_5_20ev_pos = "data/example/di_tof_5_20ev_pos")
+  path_dirs_unknowns <- list(di_tof_pos = "data/example/di_tof_5_20ev_pos")
 }
 
 ## Import
@@ -40,6 +40,26 @@ if (!"example=TRUE" %in% args) {
   df_combined <- df_unknowns
 }
 
+## Combining ot datasets and renaming
+df_combined <- df_combined |>
+  tidytable::mutate_rowwise(
+    cutoff = stringi::stri_replace_all_regex(
+      str =  cutoff,
+      pattern = gsub(
+        pattern = "data/",
+        replacement = "",
+        x = c(
+          path_dirs_standards |> unlist() |> unname(),
+          path_dirs_unknowns |> unlist() |> unname()
+        )
+      ),
+      replacement =  c(names(path_dirs_standards), names(path_dirs_unknowns)),
+      vectorise_all = FALSE
+    )
+  ) |> 
+  tidytable::mutate(cutoff = gsub("(di_ot_neg)(.*)", "\\1", cutoff)) |>
+  tidytable::mutate(cutoff = gsub("(di_ot_pos)(.*)", "\\1", cutoff))
+    
 ## Pivoting
 df_pivoted_before <- df_combined |>
   tidytable::distinct(cutoff, tidytable::all_of(SIGNAL_TYPES), ms1) |>
@@ -71,26 +91,29 @@ if (!"example=TRUE" %in% args) {
     venn_plot_highlighted(df_venn = df_venn)
   # venn_highlighted
   ## Taking the first plots
-  rainplot_astral_before <- rainplots_by_group(
+  rainplot_astral_before <- plot_distributions(
     df = df_pivoted_before |>
-      tidytable::filter(cutoff == "lc_at_5_pos"),
+      tidytable::filter(cutoff == "lc_at_pos"),
     group = "name",
+    facet = "cutoff",
     value = "value",
     axis_label = "Proportion of MS¹ centroids"
   )
 }
-rainplot_tof_2_before <- rainplots_by_group(
+rainplot_tof_2_before <- plot_distributions(
   df = df_pivoted_before |>
-    tidytable::filter(cutoff == "di_tof_5_20ev_pos"),
+    tidytable::filter(cutoff == "di_tof_pos"),
   group = "name",
+  facet = "cutoff",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
 )
 # rainplot_tof_2_before
-rainplot_orbitrap_pos_before <- rainplots_by_group(
+rainplot_orbitrap_pos_before <- plot_distributions(
   df = df_pivoted_before |>
-    tidytable::filter(cutoff == "di_ot_5_mcescaf_pos"),
+    tidytable::filter(cutoff == "di_ot_pos"),
   group = "name",
+  facet = "cutoff",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
 )
@@ -118,23 +141,25 @@ df_minimal <- df_combined_single |>
     stringi::stri_replace_last_regex(pattern = "_[0-9].*", replacement = ""))
 
 ## Plotting
-rainplot_tof_1 <- rainplots_by_group(
+rainplot_tof_1 <- plot_distributions(
   df = df_pivoted |>
     tidytable::filter(cutoff == "di_tof_0_20ev_pos"),
   group = "name",
+  facet = "cutoff",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
 )
 # rainplot_tof_1
-rainplot_tof_2 <- rainplots_by_group(
+rainplot_tof_2 <- plot_distributions(
   df = df_pivoted |>
-    tidytable::filter(cutoff == "di_tof_5_20ev_pos"),
+    tidytable::filter(cutoff == "di_tof_pos"),
   group = "name",
+  facet = "cutoff",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
 )
 # rainplot_tof_2
-rainplot_tof_2_40ev <- rainplots_by_group(
+rainplot_tof_2_40ev <- plot_distributions(
   df = df_pivoted |>
     tidytable::filter(cutoff == "di_tof_5_40ev_pos"),
   group = "name",
@@ -142,7 +167,7 @@ rainplot_tof_2_40ev <- rainplots_by_group(
   axis_label = "Proportion of MS¹ centroids"
 )
 # rainplot_tof_2_40ev
-rainplot_tof_2_60ev <- rainplots_by_group(
+rainplot_tof_2_60ev <- plot_distributions(
   df = df_pivoted |>
     tidytable::filter(cutoff == "di_tof_5_60ev_pos"),
   group = "name",
@@ -150,7 +175,7 @@ rainplot_tof_2_60ev <- rainplots_by_group(
   axis_label = "Proportion of MS¹ centroids"
 )
 # rainplot_tof_2_60ev
-rainplot_tof_3 <- rainplots_by_group(
+rainplot_tof_3 <- plot_distributions(
   df = df_pivoted |>
     tidytable::filter(cutoff == "di_tof_10_20ev_pos"),
   group = "name",
@@ -158,25 +183,25 @@ rainplot_tof_3 <- rainplots_by_group(
   axis_label = "Proportion of MS¹ centroids"
 )
 # rainplot_tof_3
-rainplot_orbitrap_pos <- rainplots_by_group(
+rainplot_orbitrap_pos <- plot_distributions(
   df = df_pivoted |>
-    tidytable::filter(cutoff == "di_ot_5_mcescaf_pos"),
+    tidytable::filter(cutoff == "di_ot_5_pos"),
   group = "name",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
 )
 # rainplot_orbitrap_pos
-rainplot_orbitrap_neg <- rainplots_by_group(
+rainplot_orbitrap_neg <- plot_distributions(
   df = df_pivoted |>
-    tidytable::filter(cutoff == "di_ot_5_mcescaf_neg"),
+    tidytable::filter(cutoff == "di_ot_5_neg"),
   group = "name",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
 )
 # rainplot_orbitrap_neg
-rainplot_astral <- rainplots_by_group(
+rainplot_astral <- plot_distributions(
   df = df_pivoted |>
-    tidytable::filter(cutoff == "lc_at_5_pos"),
+    tidytable::filter(cutoff == "lc_at_pos"),
   group = "name",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
@@ -272,7 +297,7 @@ relation <- df_minimal |>
   ggplot2::ggplot(
     mapping = ggplot2::aes(
       x = fragmented_percent,
-      y = fragments,
+      y = fragment,
       group = cutoff,
       color = cutoff,
       fill = cutoff
