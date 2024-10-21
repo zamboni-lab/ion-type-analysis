@@ -7,8 +7,8 @@
 #'
 #' @examples
 choose_pal <- function(subclasses) {
-  pal <- if (subclasses <= 7) {
-    color <- khroma::color("bright")
+  pal <- if (subclasses <= 10) {
+    color <- ggsci::pal_npg()
     rev(color(subclasses))
   } else {
     tableau20 <- c(
