@@ -27,6 +27,8 @@ plot_distributions <- function(df,
     tidytable::mutate(median_value = median(!!as.name(value))) |>
     tidytable::mutate(density = list(density(!!as.name(value), na.rm = TRUE))) |>
     tidytable::mutate(max_density = tidytable::map_dbl(density, ~ max(.x$y))) |>
+    tidytable::group_by(!!as.name(facet)) |>
+    tidytable::mutate(mmax_density = max(max_density)) |>
     tidytable::ungroup() |>
     ggplot2::ggplot(ggplot2::aes(
       x = !!as.name(value),
@@ -37,6 +39,16 @@ plot_distributions <- function(df,
     ggplot2::geom_density(ggplot2::aes(group = !!as.name(group)),
       alpha = 0.1,
       linewidth = 1
+    ) +
+    ggplot2::geom_text(
+      ggplot2::aes(
+        x = 0.99,
+        y = mmax_density,
+        label = !!as.name(facet)
+      ),
+      hjust = 1,
+      fontface = "bold",
+      color = "grey30"
     ) +
     ggplot2::geom_text(
       ggplot2::aes(
@@ -64,11 +76,11 @@ plot_distributions <- function(df,
       panel.grid.minor = ggplot2::element_blank(),
       panel.grid.major.y = ggplot2::element_blank(),
       axis.ticks = ggplot2::element_blank(),
-      axis.text = ggplot2::element_text(colour = "grey30"),
+      axis.text = ggplot2::element_text(color = "grey30"),
       axis.text.y = ggplot2::element_blank(),
-      strip.text.y.right = ggplot2::element_text(angle = 0),
-      axis.title = ggplot2::element_text(colour = "grey30"),
-      legend.text = ggplot2::element_text(colour = "grey30"),
+      # strip.text.y.right = ggplot2::element_text(angle = 0),
+      axis.title = ggplot2::element_text(color = "grey30"),
+      legend.text = ggplot2::element_text(color = "grey30"),
       plot.title = ggtext::element_markdown(face = "bold", size = 21),
       plot.subtitle = ggplot2::element_text(
         color = "grey40",
@@ -82,7 +94,7 @@ plot_distributions <- function(df,
         margin = ggplot2::margin(20, 0, 0, 0)
       ),
       # plot.margin = ggplot2::margin(15, 15, 10, 15),
-      strip.text = ggplot2::element_text(colour = "grey30"),
+      strip.text = ggplot2::element_blank(),
       text = ggplot2::element_text(face = "bold", color = "grey30")
     )
 }

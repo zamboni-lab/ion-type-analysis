@@ -109,24 +109,6 @@ rainplot_tof_2_before <- plot_distributions(
   axis_label = "Proportion of MS¹ centroids"
 )
 # rainplot_tof_2_before
-rainplot_orbitrap_pos_before <- plot_distributions(
-  df = df_pivoted_before |>
-    tidytable::filter(cutoff == "di_ot_pos"),
-  group = "name",
-  facet = "cutoff",
-  value = "value",
-  axis_label = "Proportion of MS¹ centroids"
-)
-# rainplot_orbitrap_pos_before
-rainplot_orbitrap_neg_before <- plot_distributions(
-  df = df_pivoted_before |>
-    tidytable::filter(cutoff == "di_ot_neg"),
-  group = "name",
-  facet = "cutoff",
-  value = "value",
-  axis_label = "Proportion of MS¹ centroids"
-)
-# rainplot_orbitrap_neg_before
 
 ## Switching values to single identity only
 df_combined_single <- df_combined |>
@@ -149,83 +131,21 @@ df_minimal <- df_combined_single |>
   tidytable::mutate(cutoff = cutoff |>
     stringi::stri_replace_last_regex(pattern = "_[0-9].*", replacement = ""))
 
-## Plotting
-rainplot_tof_1 <- plot_distributions(
-  df = df_pivoted |>
-    tidytable::filter(cutoff == "di_tof_0_20ev_pos"),
-  group = "name",
-  facet = "cutoff",
-  value = "value",
-  axis_label = "Proportion of MS¹ centroids"
-)
-# rainplot_tof_1
 rainplot_tof_2 <- plot_distributions(
   df = df_pivoted |>
-    tidytable::filter(cutoff == "di_tof_pos"),
+    tidytable::filter(cutoff == "di_tof_pos") |>
+    tidytable::mutate(cutoff = TRANSLATIONS[cutoff]),
   group = "name",
   facet = "cutoff",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
 )
 # rainplot_tof_2
-rainplot_tof_2_40ev <- plot_distributions(
-  df = df_pivoted |>
-    tidytable::filter(cutoff == "di_tof_5_40ev_pos"),
-  group = "name",
-  facet = "cutoff",
-  value = "value",
-  axis_label = "Proportion of MS¹ centroids"
-)
-# rainplot_tof_2_40ev
-rainplot_tof_2_60ev <- plot_distributions(
-  df = df_pivoted |>
-    tidytable::filter(cutoff == "di_tof_5_60ev_pos"),
-  group = "name",
-  facet = "cutoff",
-  value = "value",
-  axis_label = "Proportion of MS¹ centroids"
-)
-# rainplot_tof_2_60ev
-rainplot_tof_3 <- plot_distributions(
-  df = df_pivoted |>
-    tidytable::filter(cutoff == "di_tof_10_20ev_pos"),
-  group = "name",
-  facet = "cutoff",
-  value = "value",
-  axis_label = "Proportion of MS¹ centroids"
-)
-# rainplot_tof_3
-rainplot_orbitrap_pos <- plot_distributions(
-  df = df_pivoted |>
-    tidytable::filter(cutoff == "di_ot_pos"),
-  group = "name",
-  facet = "cutoff",
-  value = "value",
-  axis_label = "Proportion of MS¹ centroids"
-)
-# rainplot_orbitrap_pos
-rainplot_orbitrap_neg <- plot_distributions(
-  df = df_pivoted |>
-    tidytable::filter(cutoff == "di_ot_neg"),
-  group = "name",
-  facet = "cutoff",
-  value = "value",
-  axis_label = "Proportion of MS¹ centroids"
-)
-# rainplot_orbitrap_neg
-rainplot_astral <- plot_distributions(
-  df = df_pivoted |>
-    tidytable::filter(cutoff == "lc_at_pos"),
-  group = "name",
-  facet = "cutoff",
-  value = "value",
-  axis_label = "Proportion of MS¹ centroids"
-)
-# rainplot_astral
 
 if (!"example=TRUE" %in% args) {
   rainplot_types_before <- df_pivoted_before |>
     tidytable::filter(cutoff %in% EXAMPLES) |>
+    tidytable::mutate(cutoff = TRANSLATIONS[cutoff]) |>
     plot_distributions(
       group = "name",
       facet = "cutoff",
@@ -234,6 +154,7 @@ if (!"example=TRUE" %in% args) {
     )
   rainplot_types <- df_pivoted |>
     tidytable::filter(cutoff %in% EXAMPLES) |>
+    tidytable::mutate(cutoff = TRANSLATIONS[cutoff]) |>
     plot_distributions(
       group = "name",
       facet = "cutoff",
@@ -242,6 +163,7 @@ if (!"example=TRUE" %in% args) {
     )
   rainplot_threshold <- df_pivoted |>
     tidytable::filter(cutoff %in% THRESHOLDS) |>
+    tidytable::mutate(cutoff = TRANSLATIONS_THRESHOLDS[cutoff]) |>
     plot_distributions(
       group = "name",
       facet = "cutoff",
@@ -250,6 +172,7 @@ if (!"example=TRUE" %in% args) {
     )
   rainplot_energy <- df_pivoted |>
     tidytable::filter(cutoff %in% ENERGIES) |>
+    tidytable::mutate(cutoff = TRANSLATIONS_ENERGIES[cutoff]) |>
     plot_distributions(
       group = "name",
       facet = "cutoff",
@@ -262,8 +185,8 @@ if (!"example=TRUE" %in% args) {
 export_figure <- function(figure,
                           filename,
                           extension = EXTENSION,
-                          height = 9,
-                          width = 16) {
+                          height = 7,
+                          width = 7) {
   path <- paste(filename, extension, sep = ".")
   if (extension == "png") {
     ggplot2::ggsave(figure,
@@ -294,16 +217,12 @@ if (!"example=TRUE" %in% args) {
 
   venn_simple |>
     export_figure(
-      filename = "man/figures/venn_simple",
-      height = 7,
-      width = 7
+      filename = "man/figures/venn_simple"
     )
 
   venn_highlighted |>
     export_figure(
-      filename = "man/figures/venn_highlighted",
-      height = 7,
-      width = 7
+      filename = "man/figures/venn_highlighted"
     )
 } else {
   rainplot_tof_2_before |>

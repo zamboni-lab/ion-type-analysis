@@ -30,7 +30,7 @@ COLNAMES <- c(
   "ei" = "ion_type_analysis:ms1_ei"
 )
 
-ENERGIES <- c("di_tof_pos", "di_tof_10_40ev_pos", "di_tof_10_60ev_pos")
+ENERGIES <- c("di_tof_pos", "di_tof_5_40ev_pos", "di_tof_5_60ev_pos")
 
 EXAMPLES <- c("di_ot_pos", "di_ot_neg", "di_tof_pos", "lc_at_pos")
 
@@ -43,11 +43,20 @@ SIGNAL_TYPES_FULL <- c("non-redundant", "ao", "io", "co", "aii", "aic", "iic", "
 THRESHOLDS <- c("di_tof_0_20ev_pos", "di_tof_pos", "di_tof_10_20ev_pos")
 
 TRANSLATIONS <- c(
-  "DI-ToF (standards, positive)",
-  "DI-Orbitrap (standards, positive)",
-  "DI-Orbitrap (standards, negative)",
-  "DI-ToF, lowest signal x0",
-  "DI-ToF, lowest signal x5",
-  "DI-ToF, lowest signal x10",
-  "LC-Astral (NIST human fecal extract)"
+  "di_tof_pos" = "DI-ToF (standards, positive)",
+  "di_ot_pos" = "DI-Orbitrap (standards, positive)",
+  "di_ot_neg" = "DI-Orbitrap (standards, negative)",
+  "lc_at_pos" = "LC-Astral (NIST human fecal extract)"
 )
+TRANSLATIONS_THRESHOLDS <-
+  c(
+    "di_tof_0_20ev_pos" = "DI-ToF, no threshold",
+    "di_tof_pos" = "DI-ToF, lowest signal x5",
+    "di_tof_10_20ev_pos" = "DI-ToF, lowest signal x10"
+  )
+TRANSLATIONS_ENERGIES <-
+  c(
+    "di_tof_pos" = "DI-ToF, 20eV",
+    "di_tof_5_40ev_pos" = "DI-ToF, 40eV",
+    "di_tof_5_60ev_pos" = "DI-ToF, 60eV"
+  )
