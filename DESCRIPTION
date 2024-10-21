@@ -21,7 +21,7 @@ Imports:
     ggdist (>= 3.3.2),
     ggplot2 (>= 3.5.1),
     ggtext (>= 0.1.2),
-    khroma (>= 1.14.0),
+    ggsci (>= 3.2.0),
     purrr (>= 1.0.2),
     tidytable (>= 0.11.1),
     utils
