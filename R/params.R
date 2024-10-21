@@ -30,15 +30,24 @@ COLNAMES <- c(
   "ei" = "ion_type_analysis:ms1_ei"
 )
 
-EXAMPLES <- c(
-  "di_ot_5_pos",
-  "di_ot_5_neg",
-  "di_tof_5_20ev_pos",
-  "lc_at_5_pos"
-)
+ENERGIES <- c("di_tof_pos", "di_tof_10_40ev_pos", "di_tof_10_60ev_pos")
+
+EXAMPLES <- c("di_ot_pos", "di_ot_neg", "di_tof_pos", "lc_at_pos")
 
 EXTENSION <- "png"
 
 SIGNAL_TYPES <- c("adduct", "fragment", "isotope", "non-redundant")
 
 SIGNAL_TYPES_FULL <- c("non-redundant", "ao", "io", "co", "aii", "aic", "iic", "ei")
+
+THRESHOLDS <- c("di_tof_0_20ev_pos", "di_tof_pos", "di_tof_10_20ev_pos")
+
+TRANSLATIONS <- c(
+  "DI-ToF (standards, positive)",
+  "DI-Orbitrap (standards, positive)",
+  "DI-Orbitrap (standards, negative)",
+  "DI-ToF, lowest signal x0",
+  "DI-ToF, lowest signal x5",
+  "DI-ToF, lowest signal x10",
+  "LC-Astral (NIST human fecal extract)"
+)

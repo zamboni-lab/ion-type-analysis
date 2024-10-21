@@ -9,7 +9,7 @@
 choose_pal <- function(subclasses) {
   pal <- if (subclasses <= 7) {
     color <- khroma::color("bright")
-    color(subclasses)
+    rev(color(subclasses))
   } else {
     tableau20 <- c(
       "#4E79A7",

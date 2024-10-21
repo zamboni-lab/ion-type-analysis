@@ -44,7 +44,7 @@ if (!"example=TRUE" %in% args) {
 df_combined <- df_combined |>
   tidytable::mutate_rowwise(
     cutoff = stringi::stri_replace_all_regex(
-      str =  cutoff,
+      str = cutoff,
       pattern = gsub(
         pattern = "data/",
         replacement = "",
@@ -53,13 +53,13 @@ df_combined <- df_combined |>
           path_dirs_unknowns |> unlist() |> unname()
         )
       ),
-      replacement =  c(names(path_dirs_standards), names(path_dirs_unknowns)),
+      replacement = c(names(path_dirs_standards), names(path_dirs_unknowns)),
       vectorise_all = FALSE
     )
-  ) |> 
+  ) |>
   tidytable::mutate(cutoff = gsub("(di_ot_neg)(.*)", "\\1", cutoff)) |>
   tidytable::mutate(cutoff = gsub("(di_ot_pos)(.*)", "\\1", cutoff))
-    
+
 ## Pivoting
 df_pivoted_before <- df_combined |>
   tidytable::distinct(cutoff, tidytable::all_of(SIGNAL_TYPES), ms1) |>
@@ -118,6 +118,15 @@ rainplot_orbitrap_pos_before <- plot_distributions(
   axis_label = "Proportion of MS¹ centroids"
 )
 # rainplot_orbitrap_pos_before
+rainplot_orbitrap_neg_before <- plot_distributions(
+  df = df_pivoted_before |>
+    tidytable::filter(cutoff == "di_ot_neg"),
+  group = "name",
+  facet = "cutoff",
+  value = "value",
+  axis_label = "Proportion of MS¹ centroids"
+)
+# rainplot_orbitrap_neg_before
 
 ## Switching values to single identity only
 df_combined_single <- df_combined |>
@@ -163,6 +172,7 @@ rainplot_tof_2_40ev <- plot_distributions(
   df = df_pivoted |>
     tidytable::filter(cutoff == "di_tof_5_40ev_pos"),
   group = "name",
+  facet = "cutoff",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
 )
@@ -171,6 +181,7 @@ rainplot_tof_2_60ev <- plot_distributions(
   df = df_pivoted |>
     tidytable::filter(cutoff == "di_tof_5_60ev_pos"),
   group = "name",
+  facet = "cutoff",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
 )
@@ -179,22 +190,25 @@ rainplot_tof_3 <- plot_distributions(
   df = df_pivoted |>
     tidytable::filter(cutoff == "di_tof_10_20ev_pos"),
   group = "name",
+  facet = "cutoff",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
 )
 # rainplot_tof_3
 rainplot_orbitrap_pos <- plot_distributions(
   df = df_pivoted |>
-    tidytable::filter(cutoff == "di_ot_5_pos"),
+    tidytable::filter(cutoff == "di_ot_pos"),
   group = "name",
+  facet = "cutoff",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
 )
 # rainplot_orbitrap_pos
 rainplot_orbitrap_neg <- plot_distributions(
   df = df_pivoted |>
-    tidytable::filter(cutoff == "di_ot_5_neg"),
+    tidytable::filter(cutoff == "di_ot_neg"),
   group = "name",
+  facet = "cutoff",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
 )
@@ -203,122 +217,46 @@ rainplot_astral <- plot_distributions(
   df = df_pivoted |>
     tidytable::filter(cutoff == "lc_at_pos"),
   group = "name",
+  facet = "cutoff",
   value = "value",
   axis_label = "Proportion of MS¹ centroids"
 )
 # rainplot_astral
 
 if (!"example=TRUE" %in% args) {
-  rainplot_types_before <- ggpubr::ggarrange(
-    rainplot_tof_2_before,
-    rainplot_orbitrap_pos_before,
-    rainplot_astral_before,
-    labels = c(
-      "DI-ToF (standards)",
-      "DI-Orbitrap (standards)",
-      "LC-Astral (NIST human fecal extract)"
-    ),
-    common.legend = TRUE,
-    legend = "bottom",
-    ncol = 3,
-    font.label = list(color = "grey30")
-  )
-  rainplot_types <- ggpubr::ggarrange(
-    rainplot_tof_2,
-    rainplot_orbitrap_pos,
-    rainplot_astral,
-    labels = c(
-      "DI-ToF (standards)",
-      "DI-Orbitrap (standards)",
-      "LC-Astral (NIST human fecal extract)"
-    ),
-    common.legend = TRUE,
-    legend = "bottom",
-    ncol = 3,
-    font.label = list(color = "grey30")
-  )
-  rainplot_threshold <- ggpubr::ggarrange(
-    rainplot_tof_1,
-    rainplot_tof_2,
-    rainplot_tof_3,
-    labels = c(
-      "DI-ToF, no threshold",
-      "DI-ToF, lowest signal x10",
-      "DI-ToF, lowest signal x100"
-    ),
-    common.legend = TRUE,
-    legend = "bottom",
-    ncol = 3,
-    font.label = list(color = "grey30")
-  )
-  rainplot_polarity <- ggpubr::ggarrange(
-    labels = c("DI-Orbitrap (positive)", "DI-Orbitrap (negative)"),
-    rainplot_orbitrap_pos,
-    rainplot_orbitrap_neg,
-    common.legend = TRUE,
-    legend = "bottom"
-  )
-  rainplot_energy <- ggpubr::ggarrange(
-    labels = c("DI-ToF, 20eV", "DI-ToF, 40eV", "DI-ToF, 60eV"),
-    rainplot_tof_2,
-    rainplot_tof_2_40ev,
-    rainplot_tof_2_60ev,
-    common.legend = TRUE,
-    legend = "bottom",
-    ncol = 3,
-    font.label = list(color = "grey30")
-  )
-}
-
-pal <- choose_pal(length(unique(df_minimal$cutoff)))
-
-rainplot_fragmented_centroids <- rainplots_by_group(
-  df = df_minimal,
-  group = "cutoff",
-  value = "fragmented_percent",
-  axis_label = "Proportion of MS¹ centroids fragmented"
-)
-# rainplot_fragmented_centroids
-
-rainplot_fragmented_intensity <- rainplots_by_group(
-  df = df_minimal,
-  group = "cutoff",
-  value = "fragmented_intensity_percent",
-  axis_label = "Proportion of MS¹ intensity fragmented"
-)
-# rainplot_fragmented_intensity
-
-rainplot_fragmented <- ggpubr::ggarrange(rainplot_fragmented_centroids,
-  rainplot_fragmented_intensity,
-  common.legend = TRUE
-)
-
-relation <- df_minimal |>
-  ggplot2::ggplot(
-    mapping = ggplot2::aes(
-      x = fragmented_percent,
-      y = fragment,
-      group = cutoff,
-      color = cutoff,
-      fill = cutoff
+  rainplot_types_before <- df_pivoted_before |>
+    tidytable::filter(cutoff %in% EXAMPLES) |>
+    plot_distributions(
+      group = "name",
+      facet = "cutoff",
+      value = "value",
+      axis_label = "Proportion of MS¹ centroids"
     )
-  ) +
-  ggplot2::scale_color_manual(values = pal, name = "") +
-  ggplot2::scale_fill_manual(values = pal, name = "") +
-  ggplot2::geom_point(alpha = 0.2) +
-  ggplot2::geom_smooth(method = "lm") +
-  ggplot2::xlab("Ratio of fragmented centroids") +
-  ggplot2::ylab("Count of common centroids") +
-  ggplot2::scale_y_log10() +
-  ggplot2::scale_x_log10() +
-  ggplot2::theme_minimal() +
-  ggplot2::theme(
-    axis.text = ggplot2::element_text(colour = "grey30"),
-    axis.title = ggplot2::element_text(colour = "grey30"),
-    strip.text = ggplot2::element_text(colour = "grey30"),
-    legend.text = ggplot2::element_text(colour = "grey30"),
-    text = ggplot2::element_text(face = "bold", color = "grey30")
-  )
+  rainplot_types <- df_pivoted |>
+    tidytable::filter(cutoff %in% EXAMPLES) |>
+    plot_distributions(
+      group = "name",
+      facet = "cutoff",
+      value = "value",
+      axis_label = "Proportion of MS¹ centroids"
+    )
+  rainplot_threshold <- df_pivoted |>
+    tidytable::filter(cutoff %in% THRESHOLDS) |>
+    plot_distributions(
+      group = "name",
+      facet = "cutoff",
+      value = "value",
+      axis_label = "Proportion of MS¹ centroids"
+    )
+  rainplot_energy <- df_pivoted |>
+    tidytable::filter(cutoff %in% ENERGIES) |>
+    plot_distributions(
+      group = "name",
+      facet = "cutoff",
+      value = "value",
+      axis_label = "Proportion of MS¹ centroids"
+    )
+}
 
 ## Export
 export_figure <- function(figure,
@@ -351,17 +289,8 @@ if (!"example=TRUE" %in% args) {
   rainplot_threshold |>
     export_figure(filename = "man/figures/rainplot_thresholds")
 
-  rainplot_polarity |>
-    export_figure(filename = "man/figures/rainplot_polarity")
-
   rainplot_energy |>
     export_figure(filename = "man/figures/rainplot_energy")
-
-  rainplot_fragmented |>
-    export_figure(filename = "man/figures/rainplot_fragmented")
-
-  relation |>
-    export_figure(filename = "man/figures/relation_fragmented")
 
   venn_simple |>
     export_figure(
@@ -381,10 +310,6 @@ if (!"example=TRUE" %in% args) {
     export_figure(filename = "man/figures/rainplot_types_before_example")
   rainplot_tof_2 |>
     export_figure(filename = "man/figures/rainplot_types_example")
-  rainplot_fragmented |>
-    export_figure(filename = "man/figures/rainplot_fragmented_example")
-  relation |>
-    export_figure(filename = "man/figures/relation_fragmented_example")
 }
 end <- Sys.time()
 

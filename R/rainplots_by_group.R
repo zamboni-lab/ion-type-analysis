@@ -21,81 +21,32 @@ rainplots_by_group <- function(df,
                                caption = "") {
   df |>
     tidytable::filter(!is.na(!!as.name(group))) |>
+    tidytable::group_by(c(!!as.name(group), "cutoff")) |>
+    tidytable::mutate(median_value = median(!!as.name(value))) |>
+    tidytable::mutate(density = list(density(!!as.name(value), na.rm = TRUE))) |>
+    tidytable::mutate(max_density = tidytable::map_dbl(density, ~ max(.x$y))) |>
+    tidytable::ungroup() |>
     ggplot2::ggplot(ggplot2::aes(
-      x = !!as.name(group),
-      y = !!as.name(value),
+      x = !!as.name(value),
+      color = !!as.name(group),
+      fill = !!as.name(group)
+    )) +
+    ggplot2::geom_density(ggplot2::aes(group = !!as.name(group)),
+      alpha = 0.1,
+      linewidth = 1
+    ) +
+    ggplot2::geom_text(ggplot2::aes(
+      x = median_value,
+      y = max_density + 1,
+      label = round(median_value, 2),
       color = !!as.name(group)
     )) +
-    ggdist::stat_halfeye(
-      ggplot2::aes(
-        color = !!as.name(group),
-        fill = ggplot2::after_scale(x = colorspace::lighten(col = color, .5))
-      ),
-      adjust = .5,
-      width = .6,
-      .width = 0,
-      justification = -.4,
-      point_color = NA
-    ) +
-    ggplot2::geom_point(
-      ggplot2::aes(color = ggplot2::after_scale(
-        colorspace::darken(color, .1, space = "HLS")
-      )),
-      fill = "white",
-      shape = 21,
-      stroke = .4,
-      size = 2,
-      position = ggplot2::position_jitter(seed = 1, width = .12)
-    ) +
-    ggplot2::geom_point(
-      ggplot2::aes(fill = !!as.name(group)),
-      color = "transparent",
-      shape = 21,
-      stroke = .4,
-      size = 2,
-      alpha = .1,
-      position = ggplot2::position_jitter(seed = 1, width = .12)
-    ) +
-    ggplot2::stat_summary(
-      geom = "text",
-      fun = "median",
-      ggplot2::aes(
-        label = round(ggplot2::after_stat(y), 2),
-        color = !!as.name(group),
-      ),
-      fontface = "bold",
-      size = 4.5,
-      vjust = -3.5,
-      show.legend = FALSE
-    ) +
-    ggplot2::stat_summary(
-      geom = "text",
-      fun.data = add_sample,
-      ggplot2::aes(
-        label = paste("n =", ggplot2::after_stat(label)),
-        color = !!as.name(group),
-      ),
-      size = 4,
-      hjust = 0,
-      show.legend = FALSE
-    ) +
-    ggplot2::geom_boxplot(
-      ggplot2::aes(
-        color = !!as.name(group),
-        fill = ggplot2::after_scale(colorspace::desaturate(col = colorspace::lighten(col = color, .8), .4))
-      ),
-      alpha = .5,
-      outlier.alpha = 0.1,
-      width = .2,
-      outlier.shape = NA
-    ) +
-    ggplot2::ylim(0, 1) +
-    ggplot2::coord_flip(xlim = c(1.2, NA), clip = "off") +
+    ggplot2::xlim(0, 1) +
     ggplot2::scale_color_manual(values = pal, name = "") +
     ggplot2::scale_fill_manual(values = pal, name = "") +
     ggplot2::labs(
-      x = NULL,
-      y = axis_label,
+      x = axis_label,
+      y = "Density",
       title = title,
       subtitle = subtitle,
       caption = caption

@@ -13,39 +13,41 @@
 #'
 #' @examples
 plot_distributions <- function(df,
-                               facet = NULL,
+                               facet,
                                group,
                                value,
                                axis_label = "",
                                title = "",
                                subtitle = "",
                                caption = "") {
-  df <- df |>
+  df |>
+    tidytable::mutate(!!as.name(facet) := gsub("_", " ", !!as.name(facet))) |>
     tidytable::filter(!is.na(!!as.name(group))) |>
+    tidytable::group_by(c(!!as.name(group), !!as.name(facet))) |>
+    tidytable::mutate(median_value = median(!!as.name(value))) |>
+    tidytable::mutate(density = list(density(!!as.name(value), na.rm = TRUE))) |>
+    tidytable::mutate(max_density = tidytable::map_dbl(density, ~ max(.x$y))) |>
+    tidytable::ungroup() |>
     ggplot2::ggplot(ggplot2::aes(
       x = !!as.name(value),
-      color = !!as.name(group)
-    ))
-  if (!is.null(facet)) {
-    df <- df +
-      ggplot2::facet_grid(rows = ggplot2::vars(!!as.name(facet)))
-  }
-  df <- df +
-    ggdist::stat_halfeye(
-      ggplot2::aes(
-        color = !!as.name(group),
-        fill = ggplot2::after_scale(x = color)
-      ),
-      normalize = "panels",
-      alpha = 0.5
+      color = !!as.name(group),
+      fill = !!as.name(group)
+    )) +
+    ggplot2::facet_grid(rows = ggplot2::vars(!!as.name(facet)), scales = "free_y") +
+    ggplot2::geom_density(ggplot2::aes(group = !!as.name(group)),
+      alpha = 0.1,
+      linewidth = 1
     ) +
-    ggplot2::stat_summary(
-      geom = "text",
-      fun = "median",
-      ggplot2::aes(y = NA, label = round(ggplot2::after_stat(x), 2)),
-      fontface = "bold",
+    ggplot2::geom_text(
+      ggplot2::aes(
+        x = median_value,
+        y = max_density + 1,
+        label = round(median_value, 2),
+        color = !!as.name(group)
+      ),
       show.legend = FALSE
     ) +
+    ggplot2::xlim(0, 1) +
     ggplot2::scale_color_manual(values = pal, name = "") +
     ggplot2::scale_fill_manual(values = pal, name = "") +
     ggplot2::labs(
@@ -79,7 +81,7 @@ plot_distributions <- function(df,
         lineheight = 1.2,
         margin = ggplot2::margin(20, 0, 0, 0)
       ),
-      plot.margin = ggplot2::margin(15, 15, 10, 15),
+      # plot.margin = ggplot2::margin(15, 15, 10, 15),
       strip.text = ggplot2::element_text(colour = "grey30"),
       text = ggplot2::element_text(face = "bold", color = "grey30")
     )
