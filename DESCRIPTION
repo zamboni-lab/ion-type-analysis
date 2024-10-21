@@ -17,7 +17,7 @@ Imports:
     colorspace (>= 2.1.1),
     ComplexUpset (>= 1.3.3),
     crayon (>= 1.5.3),
-    dplyr (>= 1.1.4),
+    forcats (>= 1.0.0),
     ggdist (>= 3.3.2),
     ggplot2 (>= 3.5.1),
     ggtext (>= 0.1.2),

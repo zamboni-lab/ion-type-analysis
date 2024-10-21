@@ -20,8 +20,9 @@ plot_distributions <- function(df,
                                title = "",
                                subtitle = "",
                                caption = "") {
-  df |>
+  df <- df |>
     tidytable::mutate(!!as.name(facet) := gsub("_", " ", !!as.name(facet))) |>
+    tidytable::mutate(!!as.name(facet) := forcats::fct_rev(!!as.name(facet))) |>
     tidytable::filter(!is.na(!!as.name(group))) |>
     tidytable::group_by(c(!!as.name(group), !!as.name(facet))) |>
     tidytable::mutate(median_value = median(!!as.name(value))) |>
@@ -29,32 +30,41 @@ plot_distributions <- function(df,
     tidytable::mutate(max_density = tidytable::map_dbl(density, ~ max(.x$y))) |>
     tidytable::group_by(!!as.name(facet)) |>
     tidytable::mutate(mmax_density = max(max_density)) |>
-    tidytable::ungroup() |>
+    tidytable::ungroup()
+
+  df |>
     ggplot2::ggplot(ggplot2::aes(
       x = !!as.name(value),
       color = !!as.name(group),
-      fill = !!as.name(group)
+      # fill = !!as.name(group)
     )) +
     ggplot2::facet_grid(rows = ggplot2::vars(!!as.name(facet)), scales = "free_y") +
-    ggplot2::geom_density(ggplot2::aes(group = !!as.name(group)),
-      alpha = 0.1,
+    ggplot2::geom_line(ggplot2::aes(group = !!as.name(group)),
+      stat = "density",
       linewidth = 1
     ) +
     ggplot2::geom_text(
       ggplot2::aes(
         x = 0.99,
-        y = mmax_density,
+        y = mmax_density + 3,
         label = !!as.name(facet)
       ),
       hjust = 1,
       fontface = "bold",
       color = "grey30"
     ) +
-    ggplot2::geom_text(
+    ggrepel::geom_label_repel(
+      data = df |>
+        tidytable::distinct(
+          median_value,
+          max_density,
+          !!as.name(group),
+          !!as.name(facet)
+        ),
       ggplot2::aes(
         x = median_value,
-        y = max_density + 1,
-        label = round(median_value, 2),
+        y = 1.2 * max_density,
+        label = format(round(median_value, 2), nsmall = 2),
         color = !!as.name(group)
       ),
       show.legend = FALSE
