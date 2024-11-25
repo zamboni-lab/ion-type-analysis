@@ -1,0 +1,73 @@
+Package: ionTypeAnalysis
+Title: Ion Type Analysis
+Version: 0.0.1
+Authors@R: c(
+    person("Adriano", "Rutz", , "rutz@imsb.biol.ethz.ch", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0443-9902"))
+  )
+Maintainer: Adriano Rutz <rutz@imsb.biol.ethz.ch>
+Description: This package provides the infrastructure to perform
+    Ion Type Analysis.
+License: GPL (>= 3)
+URL: https://github.com/zamboni-lab/ion-type-analysis
+BugReports: https://github.com/zamboni-lab/ion-type-analysis/issues
+Depends:
+    R (>= 4.3.0)
+Imports:
+    colorspace (>= 2.1.1),
+    ComplexUpset (>= 1.3.3),
+    crayon (>= 1.5.3),
+    forcats (>= 1.0.0),
+    ggplot2 (>= 3.5.1),
+    ggpubr (>= 0.6.0),
+    ggrepel (>= 0.9.6),
+    ggridges (>= 0.5.6),
+    ggsci (>= 3.2.0),
+    ggtext (>= 0.1.2),
+    purrr (>= 1.0.2),
+    tidytable (>= 0.11.1),
+    utils
+Suggests: 
+    pkgload,
+    R.utils,
+    rlang,
+VignetteBuilder:
+    knitr
+biocViews: mass spectrometry, ion types, in source fragmentation, open science
+ByteCompile: true
+Config/Needs/website: rmarkdown
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-US
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+X-schema.org-keywords: mass spectrometry, ion types, in source fragmentation, open science
+Collate:
+    'add_sample.R'
+    'calculate_jsd.R'
+    'reformat_table.R'
+    'plot_bins.R'
+    'check_occurrences.R'
+    'choose_pal.R'
+    'create_intensities_df.R'
+    'dependencies.R'
+    'export_figure.R'
+    'filter_fragments.R'
+    'import_dirs.R'
+    'import_standards.R'
+    'select_intervals.R'
+    'import_unknowns.R'
+    'install_dependencies.R'
+    'ionTypeAnalysis-package.R'
+    'load_compound_classes.R'
+    'params.R'
+    'paths.R'
+    'plot_distributions.R'
+    'plot_distributions_relative_intensities.R'
+    'plot_upset.R'
+    'rainplots_by_group.R'
+    'venn_highlight_regions.R'
+    'venn_plot_highlighted.R'
+    'venn_plot_simple.R'
+    'venn_prepare_df.R'
