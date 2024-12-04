@@ -7,11 +7,18 @@
 plot_distributions_relative_intensities(
   df,
   type_1 = "more than 2 -OH",
-  type_2 = "2 -OH or less"
+  type_2 = "2 -OH or less",
+  pal = c("#DC0000FF", "#E64B35FF", "#F39B7FFF")
 )
 }
 \arguments{
-\item{df}{}
+\item{df}{Df}
+
+\item{type_1}{Type 1}
+
+\item{type_2}{Type 2}
+
+\item{pal}{Pal}
 }
 \description{
 Plot distributions relative intensities

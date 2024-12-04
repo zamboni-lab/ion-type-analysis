@@ -72,6 +72,7 @@ df_intensities_ot <- df_standards_full |>
   tidytable::distinct(
     height,
     smiles,
+    common_intensities_row_narrow,
     highest_fragment_intensity,
     second_fragment_intensity,
     third_fragment_intensity
@@ -83,6 +84,7 @@ df_intensities_tof <- df_standards_full |>
   tidytable::distinct(
     height,
     smiles,
+    common_intensities_row_narrow,
     highest_fragment_intensity,
     second_fragment_intensity,
     third_fragment_intensity
@@ -93,6 +95,43 @@ df_intensities_2 <- df_intensities |>
   tidytable::inner_join(dark_smiles_processed) |>
   tidytable::filter(grepl(pattern = "OT", x = type, fixed = TRUE)) |>
   tidytable::mutate(type_2 = ifelse(test = num_OH > 2, yes = "more than 2 -OH", no = "2 -OH or less"))
+
+df_intensities_3 <- df_intensities_2 |>
+  tidytable::filter(type != "OT (3ʳᵈ)")
+
+df_intensities_4 <- df_intensities_3 |>
+  tidytable::mutate(
+    common_intensities_row_narrow = common_intensities_row_narrow |>
+      gsub(
+        pattern = "c(",
+        replacement = "",
+        fixed = TRUE
+      ) |>
+      gsub(
+        pattern = ")",
+        replacement = "",
+        fixed = TRUE
+      )
+  ) |>
+  tidytable::separate_longer_delim(common_intensities_row_narrow, delim = ", ") |>
+  tidytable::mutate(ratio = common_intensities_row_narrow |>
+    as.numeric() / height) |>
+  tidytable::mutate(
+    type = tidytable::case_when(
+      common_intensities_row_narrow == highest_fragment_intensity ~ "OT (1ˢᵗ)",
+      common_intensities_row_narrow == second_fragment_intensity ~ "OT (2ⁿᵈ)",
+      common_intensities_row_narrow == third_fragment_intensity ~ "OT (3ʳᵈ)",
+      TRUE ~ "other"
+    )
+  ) |>
+  tidytable::distinct(smiles, highest_fragment_intensity, second_fragment_intensity, ratio, type_2) |>
+  tidytable::mutate(type = "all fragments", type_3 = "all molecules")
+df_intensities_5 <- df_intensities_4 |>
+  tidytable::filter(type_2 == "more than 2 -OH") |>
+  tidytable::bind_rows(df_intensities_4 |>
+    tidytable::filter(type_2 != "more than 2 -OH") |>
+    tidytable::mutate(type_2 = type_3)) |>
+  tidytable::select(-type_3)
 
 ## Combining ot datasets and renaming
 df_combined <- df_combined |>
@@ -211,14 +250,9 @@ df_combined_classes <- df_classes_full |>
 df_pivoted_classes_adducts <- df_combined_classes |>
   # tidytable::filter(!grepl(pattern = "-", x = adduct_type, fixed = TRUE)) |>
   tidytable::filter(adduct_type %in% c("[M+H]+", "[M+Na]+", "[M-H]-")) |>
-  tidytable::filter(cutoff == "di_ot_pos" | cutoff == "di_ot_neg") |>
-  tidytable::distinct(
-    smiles,
-    cutoff,
-    count_fragments_row,
-    ms1,
-    adduct_type
-  ) |>
+  tidytable::filter(cutoff == "di_ot_pos" |
+    cutoff == "di_ot_neg") |>
+  tidytable::distinct(smiles, cutoff, count_fragments_row, ms1, adduct_type) |>
   tidyr::pivot_longer(cols = count_fragments_row) |>
   tidytable::group_by(adduct_type, value) |>
   tidytable::add_count() |>
@@ -329,7 +363,9 @@ if (!"example=TRUE" %in% args) {
   rainplot_adducts <- plot_distributions(
     df = df_pivoted_classes_adducts |>
       tidytable::mutate(value = ifelse(
-        test = value >= 10, yes = 10, no = value
+        test = value >= 10,
+        yes = 10,
+        no = value
       )) |>
       tidytable::mutate(cutoff = TRANSLATIONS[cutoff]) |>
       tidytable::mutate(
@@ -360,7 +396,11 @@ if (!"example=TRUE" %in% args) {
     facet = "adduct_type",
     value = "value",
     axis_label = "MS² fragments in MS¹",
-    reorder = c("[M+H]<sup>+</sup>", "[M-H]<sup>-</sup>", "[M+Na]<sup>+</sup>"),
+    reorder = c(
+      "[M+H]<sup>+</sup>",
+      "[M-H]<sup>-</sup>",
+      "[M+Na]<sup>+</sup>"
+    ),
     plot_histograms = TRUE
   ) +
     ggplot2::xlim(c(0, 11)) +
@@ -372,6 +412,10 @@ if (!"example=TRUE" %in% args) {
     ggplot2::guides(color = ggplot2::guide_legend(nrow = 3, byrow = TRUE))
 
   relative_intensities_2 <- plot_distributions_relative_intensities(df_intensities_2)
+
+  relative_intensities_1 <- plot_distributions_relative_intensities(df_intensities_3, pal = c("#DC0000FF", "#F39B7FFF"))
+
+  relative_intensities_3 <- plot_distributions_relative_intensities(df_intensities_5, pal = "#3C5488FF")
 
   figure <- ggpubr::ggarrange(
     rainplot_types,

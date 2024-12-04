@@ -2,13 +2,19 @@
 #'
 #' @include calculate_jsd.R
 #'
-#' @param df
+#' @param df Df
+#' @param type_1 Type 1
+#' @param type_2 Type 2
+#' @param pal Pal
 #'
 #' @return
 #'
 #' @examples
-plot_distributions_relative_intensities <- function(df, type_1 = "more than 2 -OH", type_2 =
-                                                      "2 -OH or less") {
+plot_distributions_relative_intensities <- function(df,
+                                                    type_1 = "more than 2 -OH",
+                                                    type_2 =
+                                                      "2 -OH or less",
+                                                    pal = c("#DC0000FF", "#E64B35FF", "#F39B7FFF")) {
   medians <- df |>
     tidytable::group_by(type, type_2) |>
     tidytable::summarize(median = median(ratio)) |>
@@ -22,15 +28,6 @@ plot_distributions_relative_intensities <- function(df, type_1 = "more than 2 -O
     tidytable::full_join(df |>
       tidytable::distinct(type, type_2))
 
-  pal <- c("#DC0000FF", "#E64B35FF", "#F39B7FFF")
-  pal <- c(
-    "#DC0000FF",
-    "#E64B35FF",
-    "#F39B7FFF",
-    "#3C5488FF",
-    "#8491B4FF",
-    "#4DBBD5FF"
-  )
   plot <- df |>
     ggplot2::ggplot(mapping = ggplot2::aes(
       x = ratio,
