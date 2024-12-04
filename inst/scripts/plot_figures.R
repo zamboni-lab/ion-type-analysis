@@ -89,14 +89,42 @@ df_intensities_tof <- df_standards_full |>
     second_fragment_intensity,
     third_fragment_intensity
   )
+df_intensities_ot_full <- df_standards_full |>
+  tidytable::filter(grepl("ot", filename)) |>
+  tidytable::filter(!grepl(pattern = "-", x = adduct_type, fixed = TRUE)) |>
+  tidytable::filter(!is.na(highest_fragment_intensity)) |>
+  tidytable::distinct(
+    height,
+    smiles,
+    common_intensities_row_narrow,
+    highest_fragment_intensity,
+    second_fragment_intensity,
+    third_fragment_intensity
+  )
+df_intensities_tof_full <- df_standards_full |>
+  tidytable::filter(grepl("tof_5_20", filename)) |>
+  tidytable::filter(!grepl(pattern = "-", x = adduct_type, fixed = TRUE)) |>
+  tidytable::filter(!is.na(highest_fragment_intensity)) |>
+  tidytable::distinct(
+    height,
+    smiles,
+    common_intensities_row_narrow,
+    highest_fragment_intensity,
+    second_fragment_intensity,
+    third_fragment_intensity
+  )
 df_intensities <- create_intensities_df(df_intensities_ot = df_intensities_ot, df_intensities_tof = df_intensities_tof)
+df_intensities_full <- create_intensities_df(df_intensities_ot = df_intensities_ot_full, df_intensities_tof = df_intensities_tof_full)
 
 df_intensities_2 <- df_intensities |>
   tidytable::inner_join(dark_smiles_processed) |>
   tidytable::filter(grepl(pattern = "OT", x = type, fixed = TRUE)) |>
   tidytable::mutate(type_2 = ifelse(test = num_OH > 2, yes = "more than 2 -OH", no = "2 -OH or less"))
 
-df_intensities_3 <- df_intensities_2 |>
+df_intensities_3 <- df_intensities_full |>
+  tidytable::inner_join(dark_smiles_processed) |>
+  tidytable::filter(grepl(pattern = "OT", x = type, fixed = TRUE)) |>
+  tidytable::mutate(type_2 = ifelse(test = num_OH > 2, yes = "more than 2 -OH", no = "2 -OH or less")) |>
   tidytable::filter(type != "OT (3ʳᵈ)")
 
 df_intensities_4 <- df_intensities_3 |>
