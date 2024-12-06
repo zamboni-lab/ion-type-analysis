@@ -189,51 +189,6 @@ df_pivoted_before <- df_combined |>
   tidyr::pivot_longer(cols = tidytable::all_of(SIGNAL_TYPES)) |>
   tidytable::mutate(value = value / ms1)
 
-pal <- choose_pal(subclasses = length(SIGNAL_TYPES))
-
-## Minimal
-if (!"example=TRUE" %in% args) {
-  df_minimal <- df_combined |>
-    tidytable::filter(cutoff %in% EXAMPLES) |>
-    tidytable::mutate(cutoff = cutoff |>
-      stringi::stri_replace_last_regex(pattern = "_[0-9].*", replacement = ""))
-
-  ## Illustrating shared annotations and strategy
-  df_venn <- df_unknowns |>
-    tidytable::select(tidytable::all_of(SIGNAL_TYPES_FULL)) |>
-    head(1) |>
-    venn_prepare_df()
-
-  upset <- df_venn |>
-    plot_upset()
-
-  venn_simple <- df_venn |>
-    venn_plot_simple()
-  # venn_simple
-
-  venn_highlighted <- venn_simple |>
-    venn_plot_highlighted(df_venn = df_venn)
-  # venn_highlighted
-  ## Taking the first plots
-  rainplot_astral_before <- plot_distributions(
-    df = df_pivoted_before |>
-      tidytable::filter(cutoff == "lc_at_pos"),
-    group = "name",
-    facet = "cutoff",
-    value = "value",
-    axis_label = "Proportion of MS¹ signals"
-  )
-}
-rainplot_tof_2_before <- plot_distributions(
-  df = df_pivoted_before |>
-    tidytable::filter(cutoff == "di_tof_pos"),
-  group = "name",
-  facet = "cutoff",
-  value = "value",
-  axis_label = "Proportion of MS¹ signals"
-)
-# rainplot_tof_2_before
-
 ## Switching values to single identity only
 df_combined_single <- df_combined |>
   tidytable::mutate(
@@ -250,12 +205,7 @@ df_pivoted <- df_combined_single |>
   tidyr::pivot_longer(cols = tidytable::all_of(SIGNAL_TYPES)) |>
   tidytable::mutate(value = value / ms1)
 
-## For classes
-# df_classes_full <- df_standards_full_2 |>
-#   tidytable::inner_join(df_classes)
-df_classes_full <- df_standards_full_2
-
-df_combined_classes <- df_classes_full |>
+df_combined_classes <- df_standards_full_2 |>
   tidytable::mutate_rowwise(
     cutoff = stringi::stri_replace_all_regex(
       str = cutoff,
@@ -294,99 +244,14 @@ df_pivoted_classes_adducts <- df_combined_classes |>
   tidytable::filter(n >= 2) |>
   tidytable::distinct()
 
-# df_pivoted_classes_proton <- df_combined_classes |>
-#   tidytable::filter(adduct_type == "[M+H]+") |>
-#   tidytable::filter(cutoff == "di_ot_pos") |>
-#   tidytable::mutate(classyfire_superclass = paste0(classyfire_superclass, " - ", adduct_type)) |>
-#   tidytable::distinct(
-#     smiles,
-#     cutoff,
-#     count_fragments_row,
-#     ms1,
-#     classyfire_superclass
-#   ) |>
-#   tidyr::pivot_longer(cols = count_fragments_row) |>
-#   tidytable::group_by(classyfire_superclass, value) |>
-#   tidytable::add_count() |>
-#   tidytable::ungroup() |>
-#   tidytable::group_by(classyfire_superclass) |>
-#   tidytable::add_count(name = "m") |>
-#   tidytable::mutate(rank = tidytable::dense_rank(desc(m))) |>
-#   tidytable::ungroup() |>
-#   tidytable::filter(m >= 100) |>
-#   tidytable::filter(rank <= 20) |>
-#   tidytable::filter(n >= 2) |>
-#   tidytable::distinct()
-
-# df_pivoted_subclasses_proton <- df_combined_classes |>
-#   tidytable::filter(cutoff == "di_ot_pos") |>
-#   # tidytable::filter(classyfire_class == "Steroids and steroid derivatives") |>
-#   tidytable::filter(!is.na(classyfire_subclass)) |>
-#   tidytable::mutate(classyfire_subclass = paste0(classyfire_subclass, " - ", adduct_type)) |>
-#   tidytable::distinct(
-#     smiles,
-#     cutoff,
-#     count_fragments_row,
-#     ms1,
-#     classyfire_subclass
-#   ) |>
-#   tidyr::pivot_longer(cols = count_fragments_row) |>
-#   tidytable::group_by(classyfire_subclass, value) |>
-#   tidytable::add_count() |>
-#   tidytable::ungroup() |>
-#   tidytable::group_by(classyfire_subclass) |>
-#   tidytable::add_count(name = "m") |>
-#   tidytable::mutate(rank = tidytable::dense_rank(desc(m))) |>
-#   tidytable::ungroup() |>
-#   tidytable::filter(m >= 10) |>
-#   tidytable::filter(rank <= 20) |>
-#   tidytable::filter(n >= 2) |>
-#   tidytable::distinct()
-
 ## Minimal
 df_minimal <- df_combined_single |>
   tidytable::filter(cutoff %in% EXAMPLES) |>
   tidytable::mutate(cutoff = cutoff |>
     stringi::stri_replace_last_regex(pattern = "_[0-9].*", replacement = ""))
 
-rainplot_tof_2 <- df_pivoted |>
-  tidytable::filter(cutoff == "di_tof_pos") |>
-  tidytable::mutate(cutoff = TRANSLATIONS[cutoff]) |>
-  plot_distributions(
-    group = "name",
-    facet = "cutoff",
-    value = "value",
-    axis_label = "Proportion of MS¹ signals"
-  )
-# rainplot_tof_2
-
 if (!"example=TRUE" %in% args) {
   library(ggrepel)
-  rainplot_types_before <- df_pivoted_before |>
-    tidytable::filter(cutoff %in% EXAMPLES) |>
-    tidytable::mutate(cutoff = TRANSLATIONS[cutoff]) |>
-    plot_distributions(
-      group = "name",
-      facet = "cutoff",
-      value = "value",
-      axis_label = "Proportion of MS¹ signals",
-      reorder = TRANSLATIONS
-    )
-
-  pal <- c("#E64B35FF", "#4DBBD5FF", "#00A087FF")
-  rainplot_types <- df_pivoted |>
-    tidytable::filter(value <= 1) |>
-    tidytable::filter(cutoff %in% EXAMPLES) |>
-    tidytable::mutate(cutoff = TRANSLATIONS[cutoff]) |>
-    plot_distributions(
-      group = "name",
-      facet = "cutoff",
-      value = "value",
-      axis_label = "Proportion of MS¹ signals",
-      reorder = TRANSLATIONS
-    ) +
-    ggplot2::guides(color = ggplot2::guide_legend(nrow = 3, byrow = FALSE))
-
   pal <- c("#F39B7FFF", "#8491B4FF", "#91D1C2FF")
   rainplot_adducts <- plot_distributions(
     df = df_pivoted_classes_adducts |>
@@ -439,139 +304,28 @@ if (!"example=TRUE" %in% args) {
     ) +
     ggplot2::guides(color = ggplot2::guide_legend(nrow = 3, byrow = TRUE))
 
-  relative_intensities_2 <- plot_distributions_relative_intensities(df_intensities_2)
-
-  relative_intensities_1 <- plot_distributions_relative_intensities(df_intensities_3, pal = c("#DC0000FF", "#F39B7FFF"))
-
-  relative_intensities_3 <- plot_distributions_relative_intensities(df_intensities_5, pal = "#3C5488FF")
-
-  figure <- ggpubr::ggarrange(
-    rainplot_types,
-    rainplot_adducts,
-    relative_intensities_2,
-    labels = "AUTO",
-    ncol = 3,
-    heights = c(1, 1),
-    widths = c(1, 1)
-  )
-
-  rainplot_threshold <- df_pivoted |>
-    tidytable::filter(cutoff %in% THRESHOLDS) |>
-    tidytable::mutate(cutoff = TRANSLATIONS_THRESHOLDS[cutoff]) |>
-    plot_distributions(
-      group = "name",
-      facet = "cutoff",
-      value = "value",
-      axis_label = "Proportion of MS¹ signals",
-      reorder = TRANSLATIONS_THRESHOLDS
-    )
-  rainplot_energy <- df_pivoted |>
-    tidytable::filter(cutoff %in% ENERGIES) |>
-    tidytable::mutate(cutoff = TRANSLATIONS_ENERGIES[cutoff]) |>
-    plot_distributions(
-      group = "name",
-      facet = "cutoff",
-      value = "value",
-      axis_label = "Proportion of MS¹ signals",
-      reorder = TRANSLATIONS_ENERGIES
-    )
-  # pal <- choose_pal(length(unique(
-  #   df_pivoted_classes_proton$classyfire_superclass
-  # )))
-  # rainplot_classes <- plot_distributions(
-  #   df = df_pivoted_classes_proton |>
-  #     tidytable::mutate(cutoff = TRANSLATIONS[cutoff]),
-  #   group = "classyfire_superclass",
-  #   facet = "classyfire_superclass",
-  #   value = "value",
-  #   axis_label = "Number of MS² fragments in MS¹ spectrum",
-  #   reorder = sort(
-  #     df_pivoted_classes_proton |>
-  #       tidytable::distinct(classyfire_superclass) |>
-  #       tidytable::pull()
-  #   ),
-  #   plot_histograms = TRUE,
-  #   normalize_xlim = FALSE
-  # ) + ggplot2::theme(legend.position = "none")
-
-  # pal <- choose_pal(length(unique(
-  #   df_pivoted_subclasses_proton$classyfire_subclass
-  # )))
-  # rainplot_subclasses <- plot_distributions(
-  #   df = df_pivoted_subclasses_proton |>
-  #     tidytable::mutate(cutoff = TRANSLATIONS[cutoff]),
-  #   group = "classyfire_subclass",
-  #   facet = "classyfire_subclass",
-  #   value = "value",
-  #   axis_label = "Number of MS² fragments in MS¹ spectrum",
-  #   reorder = sort(
-  #     df_pivoted_subclasses_proton |>
-  #       tidytable::distinct(classyfire_subclass) |>
-  #       tidytable::pull()
-  #   ),
-  #   plot_histograms = TRUE,
-  #   normalize_xlim = FALSE
-  # ) + ggplot2::theme(legend.position = "none")
-
-  pal <- choose_pal(length(unique(
-    df_pivoted_classes_adducts$adduct_type
-  )))
-  rainplot_adducts <- plot_distributions(
-    df = df_pivoted_classes_adducts |>
-      tidytable::mutate(cutoff = TRANSLATIONS[cutoff]),
-    group = "adduct_type",
-    facet = "adduct_type",
-    value = "value",
-    axis_label = "Number of MS² fragments in MS¹ spectrum",
-    reorder = sort(
-      df_pivoted_classes_adducts |>
-        tidytable::distinct(adduct_type) |>
-        tidytable::pull()
-    ),
-    plot_histograms = TRUE,
-    normalize_xlim = FALSE
-  ) + ggplot2::theme(legend.position = "none")
+  relative_intensities_1 <- plot_distributions_relative_intensities(df_intensities_5, pal = "#3C5488FF")
+  relative_intensities_2 <- plot_distributions_relative_intensities(df_intensities_3, pal = c("#DC0000FF", "#F39B7FFF"))
+  
 }
 
 ## Export
 if (!"example=TRUE" %in% args) {
-  figure |>
-    export_figure("man/figures/figure", height = 5.5, width = 11)
-  figure |>
+  rainplot_adducts |>
     export_figure(
-      "man/figures/figure",
-      extension = "svg",
-      height = 5.5,
-      width = 11
+      "man/figures/subfig_a",
+      extension = "svg"
     )
-
-  rainplot_types_before |>
-    export_figure(filename = "man/figures/rainplot_types_before")
-
-  rainplot_types |>
-    export_figure(filename = "man/figures/rainplot_types")
-
-  rainplot_threshold |>
-    export_figure(filename = "man/figures/rainplot_thresholds")
-
-  rainplot_energy |>
-    export_figure(filename = "man/figures/rainplot_energy")
-
-  # rainplot_classes |>
-  #   export_figure(filename = "man/figures/rainplot_classes")
-
-  venn_simple |>
-    export_figure(filename = "man/figures/venn_simple")
-
-  venn_highlighted |>
-    export_figure(filename = "man/figures/venn_highlighted")
-  upset |>
-    export_figure(filename = "man/figures/upset")
-} else {
-  rainplot_tof_2_before |>
-    export_figure(filename = "man/figures/rainplot_types_before_example")
-  rainplot_tof_2 |>
-    export_figure(filename = "man/figures/rainplot_types_example")
+  relative_intensities_2 |>
+    export_figure(
+      "man/figures/subfig_b",
+      extension = "svg"
+    )
+  relative_intensities_3 |>
+    export_figure(
+      "man/figures/subfig_c",
+      extension = "svg"
+    )
 }
 end <- Sys.time()
 
