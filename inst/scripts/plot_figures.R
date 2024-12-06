@@ -152,14 +152,53 @@ df_intensities_4 <- df_intensities_3 |>
       TRUE ~ "other"
     )
   ) |>
-  tidytable::distinct(smiles, highest_fragment_intensity, second_fragment_intensity, ratio, type_2) |>
-  tidytable::mutate(type = "all fragments", type_3 = "all molecules")
+  tidytable::distinct(
+    smiles,
+    highest_fragment_intensity,
+    second_fragment_intensity,
+    ratio,
+    type_2
+  )
+
 df_intensities_5 <- df_intensities_4 |>
   tidytable::filter(type_2 == "more than 2 -OH") |>
-  tidytable::bind_rows(df_intensities_4 |>
-    tidytable::filter(type_2 != "more than 2 -OH") |>
-    tidytable::mutate(type_2 = type_3)) |>
-  tidytable::select(-type_3)
+  tidytable::mutate(type = "all fragments", type_3 = "all molecules") |>
+  tidytable::bind_rows(
+    df_intensities_4 |>
+      tidytable::filter(type_2 != "more than 2 -OH") |>
+      tidytable::mutate(type = "all fragments", type_3 = "all molecules")
+  ) |>
+  tidytable::select(-type_3) |>
+  tidytable::mutate(type_2 = type_2 |>
+    gsub(
+      pattern = "2 -OH or less",
+      replacement = "all molecules",
+      fixed = TRUE
+    ))
+
+df_intensities_6 <- df_intensities_3 |>
+  tidytable::filter(type_2 == "more than 2 -OH") |>
+  tidytable::bind_rows(df_intensities_3 |>
+    tidytable::filter(type_2 != "more than 2 -OH")) |>
+  tidytable::mutate(
+    type_2 = type_2 |>
+      gsub(
+        pattern = "2 -OH or less",
+        replacement = "all molecules",
+        fixed = TRUE
+      ),
+    type = type |>
+      gsub(
+        pattern = "OT (1ˢᵗ)",
+        replacement = "1ˢᵗ most intense",
+        fixed = TRUE
+      ) |>
+      gsub(
+        pattern = "OT (2ⁿᵈ)",
+        replacement = "2ⁿᵈ most intense",
+        fixed = TRUE
+      )
+  )
 
 ## Combining ot datasets and renaming
 df_combined <- df_combined |>
@@ -305,27 +344,17 @@ if (!"example=TRUE" %in% args) {
     ggplot2::guides(color = ggplot2::guide_legend(nrow = 3, byrow = TRUE))
 
   relative_intensities_1 <- plot_distributions_relative_intensities(df_intensities_5, pal = "#3C5488FF")
-  relative_intensities_2 <- plot_distributions_relative_intensities(df_intensities_3, pal = c("#DC0000FF", "#F39B7FFF"))
-  
+  relative_intensities_2 <- plot_distributions_relative_intensities(df_intensities_6, pal = c("#DC0000FF", "#F39B7FFF"))
 }
 
 ## Export
 if (!"example=TRUE" %in% args) {
   rainplot_adducts |>
-    export_figure(
-      "man/figures/subfig_a",
-      extension = "svg"
-    )
+    export_figure("man/figures/subfig_a", extension = "svg")
   relative_intensities_1 |>
-    export_figure(
-      "man/figures/subfig_b",
-      extension = "svg"
-    )
+    export_figure("man/figures/subfig_b", extension = "svg")
   relative_intensities_2 |>
-    export_figure(
-      "man/figures/subfig_c",
-      extension = "svg"
-    )
+    export_figure("man/figures/subfig_c", extension = "svg")
 }
 end <- Sys.time()
 
