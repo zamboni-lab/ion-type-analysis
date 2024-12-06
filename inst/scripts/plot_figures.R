@@ -316,12 +316,12 @@ if (!"example=TRUE" %in% args) {
       "man/figures/subfig_a",
       extension = "svg"
     )
-  relative_intensities_2 |>
+  relative_intensities_1 |>
     export_figure(
       "man/figures/subfig_b",
       extension = "svg"
     )
-  relative_intensities_3 |>
+  relative_intensities_2 |>
     export_figure(
       "man/figures/subfig_c",
       extension = "svg"
