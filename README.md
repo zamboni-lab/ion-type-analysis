@@ -337,11 +337,11 @@ R < ./inst/scripts/plot_figures.R --no-save
 
 Signals were extracted using a [custom version of mzmine](https://github.com/Adafede/mzmine/tree/fragments_analysis) (detailed parameters can be inspected in the [related batch files](https://github.com/zamboni-lab/ion-type-analysis/tree/correspondence/.mzmine/batch)).
 For all datasets, background was removed at all MS levels using a factor of lowest signal of 5.
-A tolerance of 5 mDa or 10 ppm was used for matching on MS1.
-This tolerance was tripled for MS^n>1^levels.
+A tolerance of 5 mDa or 10 ppm was used for matching on MS<sup>1</sup>.
+This tolerance was tripled for MS<sup>n>1</sup> levels.
 For the ion type annotation, only isotope patterns with at least 3 members were considered.
 Adducts were annotated based on the 8 most common theoretical _m/z_ differences reported as previously reported ([Nash et al., 2024](https://doi.org/10.1021/acs.analchem.4c00966))
-Finally, fragments were annotated if a signal was found in any of the related MS^n>1^ spectra.
+Finally, fragments were annotated if a signal was found in any of the related MS<sup>n>1</sup> spectra.
 For features corresponding to standards, the fragments list was further refined using BUDDY ([Xing et al., 2023](https://doi.org/10.1038/s41592-023-01850-x)).
 Only fragments corresponding to possible subformulas within a 20mDa tolerance and below 4.5 Da difference of the precursor (allowing specifically for 2H and 4H loss) were kept. 
 
