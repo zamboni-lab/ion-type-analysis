@@ -7,10 +7,10 @@
 #' @examples
 plot_upset <- function(df_venn) {
   df_upset <- df_venn |> tidytable::mutate(
-    "non-redundant" = ifelse(
-      test = adducts == FALSE & fragments == FALSE & isotopes == FALSE,
-      yes = TRUE,
-      no = FALSE
+    "non-redundant" = tidytable::if_else(
+      condition = adducts == FALSE & fragments == FALSE & isotopes == FALSE,
+      true = TRUE,
+      false = FALSE
     )
   )
 
