@@ -335,6 +335,28 @@ R < ./inst/scripts/plot_figures.R --no-save
 
 ## Methods in brief
 
+### Direct Injection Analysis
+
+For the DI-Time of Flight dataset, measurements were conducted as follows:
+Methanol was used as a mobile phase.
+The injection volume was 5 *μ*L.
+The flow rate was 200 *µ*L/min, for 0.6 minutes.
+The MS analyses were performed on a SCIEX ZenoTOF 7600 system (Darmstadt, Germany) with a TwinSpray Turbo V ion source.
+The following ion source parameters were applied:
+a spray voltage of 5.5 kV (positive) or -4.5 kV (negative), a capillary temperature of 700 °C, ion source gas 1 of 70 psi, ion source gas 2 of 70 psi, curtain gas of 45 psi, and CAD gas of 7 psi.
+Each MS cycle started with a TOF MS scan of 50 ms ranging from 50 to 1500 Da, using a declustering potential of 50 eV and a collision energy of 10 eV, followed by 2 MS2 events. Dynamic background exclusion and a generic exclusion list were used.
+After fragmentation, the candidate ions were excluded for 2s after 2 occurrences.
+The MS2 events were acquired from 50 to 1500 Da, and isotopes were excluded using a 4 Da window. 
+Declustering potential was 50eV, DP and CE spread set to 0, and collision energy 20, 40, 60 eV (CID) or 12, 16, 24 kinetic energy (EAD).
+Zeno pulsing was on.
+Raw files were converted and centroided using MSConvert cwt filter (version 3.0.24284).
+The resulting dataset is available on Zenodo (<https://zenodo.org/records/14218309>).
+For the DI-Orbitrap dataset, measurements were performed by Brungs et al. (Brungs et al. 2024) and the data was downloaded from Zenodo (<https://zenodo.org/records/13890851>).
+As indicated by the authors, the fragments 147.72 and 173.52 were removed manually.
+For both datasets, only standards annotated with an annotation score of at least 0.7 were considered.
+
+### Ion Type Analysis
+
 Signals were extracted using a [custom version of mzmine](https://github.com/Adafede/mzmine/tree/fragments_analysis) (detailed parameters can be inspected in the [related batch files](https://github.com/zamboni-lab/ion-type-analysis/tree/correspondence/.mzmine/batch)).
 For all datasets, background was removed at all MS levels using a factor of lowest signal of 5.
 A tolerance of 5 mDa or 10 ppm was used for matching on MS<sup>1</sup>.
@@ -344,6 +366,10 @@ Adducts were annotated based on the 8 most common theoretical _m/z_ differences 
 Finally, fragments were annotated if a signal was found in any of the related MS<sup>n>1</sup> spectra.
 For features corresponding to standards, the fragments list was further refined using BUDDY ([Xing et al., 2023](https://doi.org/10.1038/s41592-023-01850-x)).
 Only fragments corresponding to possible subformulas within a 20mDa tolerance and below 4.5 Da difference of the precursor (allowing specifically for 2H and 4H loss) were kept. 
+
+### Feature Proportion Analysis
+
+Further information can be found at <https://github.com/YasinEl/DarkMetabolome_figures/tree/correspondence>.
 
 ## Acknowledgments
 
