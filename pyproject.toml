@@ -42,7 +42,7 @@ python = "^3.10"
 beautifulsoup4 = "^4.12.3"
 pandas = "^2.2.3"
 PyYAML = "^6.0.2"
-requests = "^2.32.3"
+requests = "^2.32.4"
 tqdm = "^4.66.5"
 
 
