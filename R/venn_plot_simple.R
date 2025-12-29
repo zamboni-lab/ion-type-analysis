@@ -27,7 +27,7 @@ venn_plot_simple <- function(df) {
       + ComplexUpset::scale_fill_venn_mix(df, guide = "none")
       + ggplot2::theme(
         legend.position = "none",
-        text = ggplot2::element_text(face = "bold", color = "grey30")
+        text = ggplot2::element_text(face = "bold", color = "#767676")
       )
   )
 }

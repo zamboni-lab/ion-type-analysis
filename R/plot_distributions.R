@@ -109,7 +109,7 @@ plot_distributions <- function(df,
         ),
         hjust = 1,
         fontface = "bold",
-        color = "grey30",
+        color = "#767676",
         check_overlap = TRUE
       )
   }
@@ -147,21 +147,21 @@ plot_distributions <- function(df,
       legend.position = "top",
       panel.grid.minor = ggplot2::element_blank(),
       panel.grid.major.y = ggplot2::element_blank(),
-      axis.text = ggtext::element_markdown(color = "grey30"),
+      axis.text = ggtext::element_markdown(color = "#767676"),
       axis.text.y = ggplot2::element_blank(),
       axis.ticks = ggplot2::element_blank(),
-      axis.title = ggtext::element_markdown(color = "grey30"),
-      legend.text = ggtext::element_markdown(color = "grey30"),
+      axis.title = ggtext::element_markdown(color = "#767676"),
+      legend.text = ggtext::element_markdown(color = "#767676"),
       plot.title = ggplot2::element_blank(),
       plot.subtitle = ggplot2::element_blank(),
       plot.caption = ggplot2::element_blank(),
       strip.text = ggplot2::element_blank(),
-      text = ggplot2::element_text(face = "bold", color = "grey30")
+      text = ggplot2::element_text(face = "bold", color = "#767676")
     )
   if (plot_histograms) {
     plot <- plot +
       ggplot2::theme(
-        axis.text.y = ggplot2::element_text(color = "grey30")
+        axis.text.y = ggplot2::element_text(color = "#767676")
       )
   }
   plot

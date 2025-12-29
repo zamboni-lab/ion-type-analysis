@@ -56,25 +56,25 @@ rainplots_by_group <- function(df,
       panel.grid.minor = ggplot2::element_blank(),
       panel.grid.major.y = ggplot2::element_blank(),
       axis.ticks = ggplot2::element_blank(),
-      axis.text = ggplot2::element_text(colour = "grey30"),
+      axis.text = ggplot2::element_text(colour = "#767676"),
       axis.text.y = ggplot2::element_blank(),
-      axis.title = ggplot2::element_text(colour = "grey30"),
+      axis.title = ggplot2::element_text(colour = "#767676"),
       axis.title.x = ggplot2::element_text(margin = ggplot2::margin(t = 10), size = 16),
-      legend.text = ggplot2::element_text(colour = "grey30"),
+      legend.text = ggplot2::element_text(colour = "#767676"),
       plot.title = ggtext::element_markdown(face = "bold", size = 21),
       plot.subtitle = ggplot2::element_text(
-        color = "grey40",
+        color = "#767676",
         hjust = 0,
         margin = ggplot2::margin(0, 0, 20, 0)
       ),
       plot.title.position = "plot",
       plot.caption = ggtext::element_markdown(
-        color = "grey40",
+        color = "#767676",
         lineheight = 1.2,
         margin = ggplot2::margin(20, 0, 0, 0)
       ),
       plot.margin = ggplot2::margin(15, 15, 10, 15),
-      strip.text = ggplot2::element_text(colour = "grey30"),
-      text = ggplot2::element_text(face = "bold", color = "grey30")
+      strip.text = ggplot2::element_text(colour = "#767676"),
+      text = ggplot2::element_text(face = "bold", color = "#767676")
     )
 }
