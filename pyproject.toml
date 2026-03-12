@@ -50,7 +50,7 @@ tqdm = "^4.66.5"
 docs = ["Sphinx", "sphinx-rtd-theme", "sphinxcontrib-napoleon"]
 
 [tool.poetry.group.dev.dependencies]
-black = "^24.10.0"
+black = "^26.3.1"
 coverage = "^7.6.3"
 flake8 = "^7.1.1"
 importlib-metadata = "^7.2.1" 
