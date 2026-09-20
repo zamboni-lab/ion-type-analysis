@@ -22,10 +22,10 @@ classifiers = [
 ]
 dependencies = [
     "beautifulsoup4>=4.15.0",
-    "pandas>=3.0.5",
+    "pandas>=3.0.6",
     "pyyaml>=6.0.3",
     "requests>=2.34.2",
-    "tqdm>=4.70.0",
+    "tqdm>=4.70.1",
 ]
 
 [project.urls]
@@ -43,17 +43,17 @@ docs = [
 [dependency-groups]
 dev = [
     "black>=26.5.1",
-    "coverage>=7.15.4",
+    "coverage>=7.16.1",
     "flake8>=7.3.0",
-    "importlib-metadata>=9.0.0",
-    "isort>=8.0.1",
+    "importlib-metadata>=9.0.1",
+    "isort>=9.0.1",
     "pytest>=9.1.1",
     "pytest-asyncio>=1.4.0",
     "pytest-cov>=7.1.0",
     "pytest-mock>=3.15.1",
     "pytest-xdist>=3.8.0",
     "requests-mock>=1.12.1",
-    "tox>=4.60.0",
+    "tox>=4.63.0",
 ]
 
 [tool.uv]
